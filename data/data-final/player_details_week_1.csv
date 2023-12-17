@@ -1,5 +1,5 @@
-Teamname,PlayerName,Number,Position,NumberOfGoals,isOnPitch,isYellow,isRed,Distance,StartTime,EndTime,TimePlayed
-Arsenal,Bernd Leno,1,GK,0,1,1,0,2,0,95,95
+Teamname,Player,Name,Number,Position,NumberOfGoals,isOnPitch,isYellow,isRed,Distance,StartTime,EndTime,TimePlayed
+Arsenal,Bernd Leno,1,GK,0,1,1,0,2,0,95,95,
 Arsenal,Tomáš Holes,2,DF,0,1,1,0,10,0,95,95
 Arsenal,Kieran Tierney,3,DF,0,1,1,0,3,0,95,95
 Arsenal,Ben White,4,DF,0,1,1,1,9,0,95,95
