@@ -11,22 +11,22 @@ class Team
 {
 private:
 
-    string m_name;              // Team name.
-    vector<Player> m_players;   // Team players.
-    Coach m_coach;              // Team coach.
-    President m_president;      // Team president.
+    string name;              // Team name.
+    vector<Player> players;   // Team players.
+    Coach coach;              // Team coach.
+    President president;      // Team president.
     
-    double m_xG;                // Expected goals.
-    double m_xGA;               // Expected goals against.
-    int m_totalGoalsFor;        // Total goals scored during season.
-    int m_totalGoalsAgainst;    // Total goals scored against during season.
-    int m_totalPoints;          // Total points for current season.
-    int m_goalDifference;       // Goals for - goals against
-    int m_totalWins;            // Total games won.
-    int m_totalDraws;           // Total games drawn.
-    int m_totalLosses;          // Total games lost.
-    int m_totalGamesPlayed;     // Total games played;
-    map<double, int> m_scoringDistribution;
+    double xG;                // Expected goals.
+    double xGA;               // Expected goals against.
+    int totalGoalsFor;        // Total goals scored during season.
+    int totalGoalsAgainst;    // Total goals scored against during season.
+    int totalPoints;          // Total points for current season.
+    int goalDifference;       // Goals for - goals against
+    int totalWins;            // Total games won.
+    int totalDraws;           // Total games drawn.
+    int totalLosses;          // Total games lost.
+    int totalGamesPlayed;     // Total games played;
+    map<double, int> scoringDistribution;
 
 public:
 
@@ -40,34 +40,34 @@ public:
         Constructor for simulations that only take season
         xG/xGA into account.
     */
-    Team( string name, double xG, double xGA, map<double, int> scoringDistribution );
+    Team( string name1, double xG1, double xGA1, map<double, int> scoringDistribution1 );
 
     /**
         Accessor methods.
     */
-    string getName() { return m_name; }
-    string getCoachName() { return m_coach.getName(); }
-    string getPresidentName() { return m_president.getName(); }
-    vector<Player> getPlayers() { return m_players; }
-    double get_xG() { return m_xG; }
-    double get_xGA() { return m_xGA; }
-    int getTotalGoalsfor() { return m_totalGoalsFor; }
-    int getTotalGoalsAgainst() { return m_totalGoalsAgainst; }
-    int getTotalPoints() { return m_totalPoints; }
-    int getGoalDifference() { return m_goalDifference; }
-    int getTotalWins() { return m_totalWins; }
-    int getTotalLosses() { return m_totalLosses; }
-    int getTotalDraws() { return m_totalDraws; }
-    int getTotalGamesPlayed() { return m_totalGamesPlayed; }
+    string getName() { return name; }
+    string getCoachName() { return coach.getName(); }
+    string getPresidentName() { return president.getName(); }
+    vector<Player> getPlayers() { return players; }
+    double get_xG() { return xG; }
+    double get_xGA() { return xGA; }
+    int getTotalGoalsfor() { return totalGoalsFor; }
+    int getTotalGoalsAgainst() { return totalGoalsAgainst; }
+    int getTotalPoints() { return totalPoints; }
+    int getGoalDifference() { return goalDifference; }
+    int getTotalWins() { return totalWins; }
+    int getTotalLosses() { return totalLosses; }
+    int getTotalDraws() { return totalDraws; }
+    int getTotalGamesPlayed() { return totalGamesPlayed; }
 
     bool operator<(const Team& team) const ;
 
     /**
         Mutator methods.
     */
-    void set_xG( double xG ) { m_xG = xG; }
-    void set_xGA( double xGA ) { m_xGA = xGA; }
-    void incrementPoints( int amount ) { m_totalPoints += amount; }
+    void set_xG( double xG ) { xG = xG; }
+    void set_xGA( double xGA ) { xGA = xGA; }
+    void incrementPoints( int amount ) { totalPoints += amount; }
 
     /**
         Methods for incrementing overall goals for and against.
@@ -108,8 +108,8 @@ public:
     // methode to populate the team players from csv file
     //void populateTeamPlayers(string teamName);
     void addPlayer(const Player& player);
-    void addCoach(const Coach& coach);
-    void addPresident(const President& president);
+    void addCoach(const Coach& coach1);
+    void addPresident(const President& president1);
     void printTeamPlayers();
 };
 
