@@ -1,0 +1,461 @@
+Team,PlayerName,Position,NumberOfgoal,isOnPitch,isYellowCard,isRedCard,distance
+Brentford,David Raya,GK,0,1,0,0,0.9,90
+Brentford,Mads Bech Sørensen,DF,0,1,1,0,5.65,90
+Brentford,Rico Henry,DF,0,1,0,0,3.35,90
+Brentford,Pontus Jansson,DF,0,1,0,0,6.23,90
+Brentford,Ethan Pinnock,DF,0,1,0,0,2.49,90
+Brentford,Christian Nørgaard,MF,0,1,1,0,7.27,90
+Brentford,Sergi Canós,MF,0,1,0,0,9.19,90
+Brentford,Marcus Forss,FW,0,1,0,0,6.54,90
+Brentford,Ivan Toney,FW,0,1,0,0,6.45,90
+Brentford,Josh Dasilva,MF,0,1,0,0,9.96,90
+Brentford,Bryan Mbeumo,MF,0,0,0,0,0,0
+Brentford,Mathias Jensen,MF,0,0,0,0,0,0
+Brentford,Dom Thompson,DF,0,0,0,0,0,0
+Brentford,Shandon Baptiste,MF,0,0,0,0,0,0
+Brentford,Charlie Goode,DF,0,0,0,0,0,0
+Brentford,Fin Stevens,DF,0,0,0,0,0,0
+Brentford,Emiliano Marcondes,MF,0,0,0,0,0,0
+Brentford,Alvaro Fernandez,DF,0,0,0,0,0,0
+Brentford,Jan Zamburek,MF,0,0,0,0,0,0
+Brentford,Mads Bidstrup,MF,0,0,0,0,0,0
+Brentford,Josh Clarke,DF,0,0,0,0,0,0
+Brentford,David Titov,DF,0,0,0,0,0,0
+Brentford,Max Haygarth,MF,0,0,0,0,0,0
+Brighton,Robert Sanchez,GK,0,1,0,0,0.4,90
+Brighton,Tariq Lamptey,DF,1,1,0,0,3.06,90
+Brighton,Ben White,DF,0,1,0,0,6.14,90
+Brighton,Adam Webster,DF,0,1,1,0,3.08,90
+Brighton,Lewis Dunk,DF,1,1,0,0,5.91,90
+Brighton,Dale Stephens,MF,0,1,0,0,9.26,90
+Brighton,Neal Maupay,FW,0,1,0,0,2.77,90
+Brighton,Yves Bissouma,MF,0,1,1,0,7.48,90
+Brighton,Aaron Connolly,FW,1,1,0,0,5.04,90
+Brighton,Leandro Trossard,MF,1,1,0,0,9.5,90
+Brighton,Pascal Groß,MF,0,0,0,0,0,0
+Brighton,Florin Andone,FW,0,1,0,0,1.62,90
+Brighton,Danny Welbeck,FW,0,0,0,0,0,0
+Brighton,Jason Steele,GK,0,0,0,0,0,0
+Brighton,Joël Veltman,DF,0,0,0,0,0,0
+Brighton,Steven Alzate,MF,0,0,0,0,0,0
+Brighton,Alexis Mac Allister,MF,0,0,0,0,0,0
+Brighton,Jakub Moder,MF,0,0,0,0,0,0
+Brighton,Enock Mwepu,MF,0,0,0,0,0,0
+Brighton,Andi Zeqiri,FW,0,0,0,0,0,0
+Brighton,Christian Walton,GK,0,0,0,0,0,0
+Brighton,Reda Khadra,MF,0,0,0,0,0,0
+Brighton,Max Sanders,MF,0,0,0,0,0,0
+Tottenham,Hugo Lloris,GK,0,1,1,0,0.05,90
+Tottenham,Matt Doherty,DF,0,1,0,0,1.26,90
+Tottenham,Sergio Reguilón,DF,0,1,1,0,6.61,90
+Tottenham,Toby Alderweireld,DF,0,1,0,0,2.32,90
+Tottenham,Pierre-Emile Højbjerg,MF,0,1,0,0,9.94,90
+Tottenham,Davinson Sánchez,DF,0,1,1,0,3.12,90
+Tottenham,Heung-Min Son,FW,0,1,1,0,1.65,90
+Tottenham,Harry Winks,MF,0,1,0,0,7.37,90
+Tottenham,Harry Kane,FW,0,1,1,0,1.28,90
+Tottenham,Dele Alli,MF,0,1,1,0,9.94,90
+Tottenham,Erik Lamela,MF,0,0,0,0,0,0
+Tottenham,Joe Hart,GK,0,0,0,0,0,0
+Tottenham,Joe Rodon,DF,0,0,0,0,0,0
+Tottenham,Cristian Romero,DF,0,0,0,0,0,0
+Tottenham,Eric Dier,DF,0,0,0,0,0,0
+Tottenham,Oliver Skipp,MF,0,0,0,0,0,0
+Tottenham,Moussa Sissoko,MF,0,0,0,0,0,0
+Tottenham,Giovani Lo Celso,MF,0,0,0,0,0,0
+Tottenham,Steven Bergwijn,MF,0,0,0,0,0,0
+Tottenham,Emerson Royal,DF,0,0,0,0,0,0
+Tottenham,Jack Clarke,MF,0,0,0,0,0,0
+Tottenham,Brandon Austin,GK,0,0,0,0,0,0
+Tottenham,Harvey White,MF,0,0,0,0,0,0
+Aston Villa,Emiliano Martínez,GK,0,1,1,0,0.43,90
+Aston Villa,Matt Targett,DF,0,1,1,0,5.28,90
+Aston Villa,Tyrone Mings,DF,0,1,1,0,2.07,90
+Aston Villa,Ezri Konsa,DF,1,1,0,0,3.81,90
+Aston Villa,Douglas Luiz,MF,0,1,1,0,7.73,90
+Aston Villa,Tyler Roberts,FW,0,1,0,0,5.95,90
+Aston Villa,John McGinn,MF,0,1,1,0,8.99,90
+Aston Villa,Danny Ings,FW,0,1,0,0,4.25,90
+Aston Villa,Emi Buendía,MF,0,1,1,0,8.98,90
+Aston Villa,Jack Grealish,MF,0,0,0,0,0,0
+Aston Villa,Anwar El Ghazi,MF,0,0,0,0,0,0
+Aston Villa,Jacob Ramsey,MF,0,0,0,0,0,0
+Aston Villa,Jed Steer,GK,0,0,0,0,0,0
+Aston Villa,Conor Hourihane,MF,0,0,0,0,0,0
+Aston Villa,Björn Engels,DF,0,1,1,0,1.89,90
+Aston Villa,Trezeguet,MF,0,0,0,0,0,0
+Aston Villa,Keinan Davis,FW,1,1,0,0,4.97,90
+Aston Villa,Morgan Sanson,MF,0,0,0,0,0,0
+Aston Villa,Matty Cash,DF,0,0,0,0,0,0
+Aston Villa,Axel Tuanzebe,DF,0,0,0,0,0,0
+Aston Villa,Marvelous Nakamba,MF,0,0,0,0,0,0
+Aston Villa,Leon Bailey,MF,0,0,0,0,0,0
+Aston Villa,John casper,MF,0,0,0,0,0,0
+Manchester United,David de Gea,GK,0,1,1,0,0.97,90
+Manchester United,Victor Lindelöf,DF,1,1,1,1,5.52,86
+Manchester United,Eric Bailly,DF,0,1,0,0,1.77,90
+Manchester United,Phil Jones,DF,1,1,0,0,3.6,90
+Manchester United,Harry Maguire,DF,0,1,0,0,2.54,90
+Manchester United,Luke Shaw,DF,0,0,0,0,0,0
+Manchester United,Edinson Cavani,FW,1,1,1,0,2.94,90
+Manchester United,Juan Mata,MF,1,1,0,0,9.39,90
+Manchester United,Anthony Martial,FW,0,1,0,0,4.45,90
+Manchester United,Marcus Rashford,FW,0,1,0,0,2.23,90
+Manchester United,Mason Greenwood,FW,0,0,0,0,0,0
+Manchester United,Lee Grant,GK,0,0,0,0,0,0
+Manchester United,Jesse Lingard,MF,1,1,1,0,8.83,90
+Manchester United,Andreas Pereira,MF,0,1,1,0,7.47,90
+Manchester United,Alex Telles,DF,0,0,0,0,0,0
+Manchester United,Paul Pogba,MF,0,0,0,0,0,0
+Manchester United,Fred,MF,0,0,0,0,0,0
+Manchester United,Bruno Fernandes,MF,0,0,0,0,0,0
+Manchester United,Amad Diallo,FW,0,0,0,0,0,0
+Manchester United,Diogo Dalot,DF,0,0,0,0,0,0
+Manchester United,Donny van de Beek,MF,0,0,0,0,0,0
+Manchester United,Dean Henderson,GK,0,0,0,0,0,0
+Manchester United,Shola Shoretire,MF,0,0,0,0,0,0
+Crystal Palace,Vicente Guaita,GK,0,1,0,0,0.34,90
+Crystal Palace,Joachim Andersen,DF,0,1,0,0,6.46,90
+Crystal Palace,Tyrick Mitchell,DF,0,1,1,0,5.12,90
+Crystal Palace,Patrick van Aanholt,DF,1,1,0,0,2.67,90
+Crystal Palace,James Tomkins,DF,0,1,1,0,1.88,90
+Crystal Palace,Scott Dann,DF,0,0,0,0,0,0
+Crystal Palace,Michael Olise,MF,0,1,1,1,7.98,4
+Crystal Palace,Cheikhou Kouyaté,MF,0,1,0,0,9.3,90
+Crystal Palace,Christian Benteke,FW,1,1,0,0,6.36,90
+Crystal Palace,Wilfried Zaha,MF,0,1,1,0,9.26,90
+Crystal Palace,Jeffrey Schlupp,MF,0,0,0,0,0,0
+Crystal Palace,Jack Butland,GK,0,0,0,0,0,0
+Crystal Palace,Connor Wickham,FW,0,1,0,0,3.54,90
+Crystal Palace,Andros Townsend,MF,0,0,0,0,0,0
+Crystal Palace,Luka Milivojević,MF,0,0,0,0,0,0
+Crystal Palace,James McArthur,MF,0,0,0,0,0,0
+Crystal Palace,Jordan Ayew,FW,0,1,1,0,2.57,90
+Crystal Palace,Nathaniel Clyne,DF,0,0,0,0,0,0
+Crystal Palace,Martin Kelly,DF,0,0,0,0,0,0
+Crystal Palace,Joel Ward,DF,0,0,0,0,0,0
+Crystal Palace,Wayne Hennessey,GK,0,0,0,0,0,0
+Crystal Palace,Odsonne Édouard,FW,0,0,0,0,0,0
+Crystal Palace,Will Hughes,MF,0,0,0,0,0,0
+Everton,Jordan Pickford,GK,0,1,0,0,0.91,90
+Everton,Mason Holgate,DF,0,1,1,0,3.11,90
+Everton,Yerry Mina,DF,0,1,1,0,5.59,90
+Everton,Michael Keane,DF,1,1,0,0,6.65,90
+Everton,Ben Godfrey,DF,1,1,1,0,4.12,90
+Everton,Allan,MF,0,1,1,0,8.39,90
+Everton,André Gomes,MF,1,1,1,0,8.53,90
+Everton,Fabian Delph,MF,0,1,1,0,7.47,90
+Everton,Dominic Calvert-Lewin,FW,0,1,1,0,3.13,90
+Everton,Gylfi Sigurðsson,MF,0,0,0,0,0,0
+Everton,James Rodríguez,MF,0,0,0,0,0,0
+Everton,Alex Iwobi,MF,0,0,0,0,0,0
+Everton,Asmir Begović,GK,0,0,0,0,0,0
+Everton,Abdoulaye Doucouré,MF,0,0,0,0,0,0
+Everton,Moise Kean,FW,1,1,0,0,5.92,90
+Everton,Andros Townsend,MF,0,0,0,0,0,0
+Everton,Alexander-Arnold,DF,0,0,0,0,0,0
+Everton,Anthony Gordon,MF,0,0,0,0,0,0
+Everton,Jonjoe Kenny,DF,0,0,0,0,0,0
+Everton,Denis Adeniran,MF,0,0,0,0,0,0
+Everton,André Gomes,MF,0,0,0,0,0,0
+Everton,Andy Lonergan,GK,0,0,0,0,0,0
+Everton,Harry Tyrer,GK,0,0,0,0,0,0
+Leicester City,Kasper Schmeichel,GK,0,1,1,0,0.75,90
+Leicester City,Wesley Fofana,DF,0,1,1,0,4.47,90
+Leicester City,James Justin,DF,0,1,1,0,2.14,90
+Leicester City,Caglar Söyüncü,DF,1,1,0,0,6.82,90
+Leicester City,Ryan Bertrand,DF,0,1,0,0,3.71,90
+Leicester City,Jonny Evans,DF,0,0,0,0,0,0
+Leicester City,Youri Tielemans,MF,1,1,0,0,7.02,90
+Leicester City,James Maddison,MF,0,1,0,0,8.79,90
+Leicester City,Jamie Vardy,FW,0,1,0,0,3.63,90
+Leicester City,Kelechi Iheanacho,FW,0,1,1,0,6.05,90
+Leicester City,Harvey Barnes,MF,0,1,0,0,7.62,90
+Leicester City,Danny Ward,GK,0,0,0,0,0,0
+Leicester City,Marc Albrighton,MF,0,0,0,0,0,0
+Leicester City,Ayoze Pérez,MF,0,0,0,0,0,0
+Leicester City,Wes Morgan,DF,0,0,0,0,0,0
+Leicester City,Hamza Choudhury,MF,0,0,0,0,0,0
+Leicester City,Dennis Praet,MF,0,0,0,0,0,0
+Leicester City,Daniel Amartey,DF,0,0,0,0,0,0
+Leicester City,Ricardo Pereira,DF,0,0,0,0,0,0
+Leicester City,Nampalys Mendy,MF,0,0,0,0,0,0
+Leicester City,Patson Daka,FW,1,1,1,0,5.77,90
+Leicester City,Ademola Lookman,MF,0,0,0,0,0,0
+Leicester City,amine khalilo,DF,0,0,0,0,0,0
+Chelsea,Kepa Arrizabalaga,GK,0,1,1,0,0.58,90
+Chelsea,Antonio Rüdiger,DF,0,1,1,0,4.02,90
+Chelsea,Marcos Alonso,DF,0,1,0,0,5.41,90
+Chelsea,Andreas Christensen,DF,0,1,0,0,5.39,90
+Chelsea,Jorginho,MF,0,1,0,0,7.96,90
+Chelsea,Thiago Silva,DF,0,1,1,0,2.08,90
+Chelsea,N'Golo Kanté,MF,0,1,0,0,7.17,90
+Chelsea,Mateo Kovačić,MF,0,1,1,0,9.93,90
+Chelsea,Romelu Lukaku,FW,0,1,0,0,2.13,90
+Chelsea,Christian Pulisic,FW,0,1,0,0,6.2,90
+Chelsea,Timo Werner,FW,0,1,0,0,2.05,90
+Chelsea,Ruben Loftus-Cheek,MF,0,0,0,0,0,0
+Chelsea,Willy Caballero,GK,0,0,0,0,0,0
+Chelsea,Tammy Abraham,FW,0,0,0,0,0,0
+Chelsea,Kurt Zouma,DF,0,0,0,0,0,0
+Chelsea,Edouard Mendy,GK,0,0,0,0,0,0
+Chelsea,Saul Niguez,MF,0,0,0,0,0,0
+Chelsea,Marco van Ginkel,MF,0,0,0,0,0,0
+Chelsea,Mason Mount,MF,0,0,0,0,0,0
+Chelsea,Callum Hudson-Odoi,MF,0,0,0,0,0,0
+Chelsea,Reece James,DF,0,0,0,0,0,0
+Chelsea,Christian Pulisic,FW,0,0,0,0,0,0
+Chelsea,Emerson Palmieri,DF,0,0,0,0,0,0
+Arsenal,Bernd Leno,GK,0,1,1,0,0.08,90
+Arsenal,Tomáš Holes,DF,0,1,0,0,4.44,90
+Arsenal,Kieran Tierney,DF,1,1,1,0,2.03,90
+Arsenal,Ben White,DF,0,1,0,0,1.25,90
+Arsenal,Thomas Partey,MF,1,1,0,0,9.55,90
+Arsenal,Gabriel Magalhães,DF,0,1,1,0,3.92,90
+Arsenal,Bukayo Saka,MF,0,1,1,0,7.67,90
+Arsenal,Martin Ødegaard,MF,0,1,1,0,8.91,90
+Arsenal,Alexandre Lacazette,FW,0,1,1,0,2.53,90
+Arsenal,Pierre-Emerick Aubameyang,FW,1,1,1,0,5.43,90
+Arsenal,Mohamed Elneny,MF,0,0,0,0,0,0
+Arsenal,Willian,MF,0,0,0,0,0,0
+Arsenal,Alex Rúnarsson,GK,0,0,0,0,0,0
+Arsenal,Pablo Marí,DF,0,0,0,0,0,0
+Arsenal,Eddie Nketiah,FW,0,1,0,0,2.67,90
+Arsenal,Rob Holding,DF,0,0,0,0,0,0
+Arsenal,Cédric Soares,DF,0,0,0,0,0,0
+Arsenal,Dani Ceballos,MF,0,0,0,0,0,0
+Arsenal,Nicolas Pépé,MF,0,0,0,0,0,0
+Arsenal,Nuno Tavares,DF,0,0,0,0,0,0
+Arsenal,Calum Chambers,DF,0,0,0,0,0,0
+Arsenal,Emile Smith Rowe,MF,0,0,0,0,0,0
+Arsenal,Eddie Nketiah,FW,0,0,0,0,0,0
+Newcastle United,Karl Darlow,GK,0,1,0,0,0.29,90
+Newcastle United,Ciaran Clark,DF,1,1,1,0,2.85,90
+Newcastle United,Paul Dummett,DF,1,1,0,0,4.11,90
+Newcastle United,Federico Fernández,DF,0,1,1,0,5.4,90
+Newcastle United,Jamaal Lascelles,DF,0,1,1,0,4.36,90
+Newcastle United,Jonjo Shelvey,MF,1,1,1,0,9.09,90
+Newcastle United,Joelinton,FW,0,1,0,0,2.62,90
+Newcastle United,Jeff Hendrick,MF,1,1,0,0,8.01,90
+Newcastle United,Callum Wilson,FW,0,1,1,0,2.51,90
+Newcastle United,Allan Saint-Maximin,MF,0,1,1,0,7.34,90
+Newcastle United,Miguel Almirón,MF,0,0,0,0,0,0
+Newcastle United,Mark Gillespie,GK,0,0,0,0,0,0
+Newcastle United,Emil Krafth,DF,0,0,0,0,0,0
+Newcastle United,Isaac Hayden,MF,0,0,0,0,0,0
+Newcastle United,Jacob Murphy,MF,0,0,0,0,0,0
+Newcastle United,Sean Longstaff,MF,0,0,0,0,0,0
+Newcastle United,Joe shelby,FW,0,1,1,0,6.47,90
+Newcastle United,Matt Ritchie,MF,0,0,0,0,0,0
+Newcastle United,Joe Willock,MF,0,0,0,0,0,0
+Newcastle United,Javier Manquillo,DF,0,0,0,0,0,0
+Newcastle United,vini Wilson,FW,0,0,0,0,0,0
+Newcastle United,Paul guergour,DF,0,0,0,0,0,0
+Newcastle United,Joe blace,MF,0,0,0,0,0,0
+West Ham,Lukasz Fabianski,GK,0,1,0,0,0.61,90
+West Ham,Winston Reid,DF,1,1,0,0,5.5,90
+West Ham,Aaron Cresswell,DF,0,1,0,0,6.12,90
+West Ham,Fabian Balbuena,DF,0,1,0,0,1.85,90
+West Ham,Vladimír Coufal,DF,0,1,0,0,2.67,90
+West Ham,Angelo Ogbonna,DF,0,0,0,0,0,0
+West Ham,Andriy Yarmolenko,MF,1,1,0,0,8.23,90
+West Ham,Manuel Lanzini,MF,0,1,0,0,9.6,90
+West Ham,Michail Antonio,FW,1,1,1,0,5.45,90
+West Ham,Mark Noble,MF,0,1,1,0,8.94,90
+West Ham,Said Benrahma,MF,0,0,0,0,0,0
+West Ham,Darren Randolph,GK,0,0,0,0,0,0
+West Ham,Tomáš Souček,MF,0,0,0,0,0,0
+West Ham,Issa Diop,DF,0,0,0,0,0,0
+West Ham,Craig Dawson,DF,0,0,0,0,0,0
+West Ham,Declan Rice,MF,0,0,0,0,0,0
+West Ham,Pablo Fornals,MF,0,0,0,0,0,0
+West Ham,Jarrod Bowen,MF,0,0,0,0,0,0
+West Ham,Andriy Yarmolenko,MF,0,0,0,0,0,0
+West Ham,Arthur Masuaku,DF,0,0,0,0,0,0
+West Ham,Conor Coventry,MF,0,0,0,0,0,0
+West Ham,Ademipo Odubeko,FW,0,1,1,0,6.98,90
+West Ham,David Martin,GK,0,0,0,0,0,0
+Wolves,Rui Patrício,GK,0,1,1,0,0.62,90
+Wolves,Max Kilman,DF,0,1,1,0,6.43,90
+Wolves,Romain Saïss,DF,0,1,0,0,2.26,90
+Wolves,Conor Coady,DF,0,1,1,0,5.18,90
+Wolves,Fernando Marçal,DF,0,1,0,0,2.67,90
+Wolves,Nélson Semedo,DF,0,0,0,0,0,0
+Wolves,Rúben Neves,MF,0,1,1,0,8.75,90
+Wolves,Rúben Neves,MF,0,1,0,0,8.5,90
+Wolves,Adama Traoré,MF,0,1,1,0,7.98,90
+Wolves,Raúl Jiménez,FW,1,1,0,0,2.29,90
+Wolves,Francisco Trincão,MF,0,0,0,0,0,0
+Wolves,John Ruddy,GK,0,0,0,0,0,0
+Wolves,Leander Dendoncker,MF,0,0,0,0,0,0
+Wolves,João Moutinho,MF,0,0,0,0,0,0
+Wolves,Willian José,FW,0,1,0,0,3.09,90
+Wolves,João Moutinho,MF,0,0,0,0,0,0
+Wolves,Adama Traoré,MF,0,0,0,0,0,0
+Wolves,Marçal,DF,0,0,0,0,0,0
+Wolves,Patrick Cutrone,FW,0,1,0,0,4.69,90
+Wolves,Meritan Shabani,MF,0,0,0,0,0,0
+Wolves,Christian Marques,DF,0,0,0,0,0,0
+Wolves,Theo Corbeanu,FW,0,0,0,0,0,0
+Wolves,Andreas Söndergaard,GK,0,0,0,0,0,0
+Liverpool,Alisson,GK,1,1,0,0,0.43,90
+Liverpool,Nathaniel Phillips,DF,0,1,1,0,6.0,90
+Liverpool,Fabinho,MF,0,1,1,0,7.6,90
+Liverpool,Virgil van Dijk,DF,0,1,0,0,2.8,90
+Liverpool,Georginio Wijnaldum,MF,0,1,0,0,8.58,90
+Liverpool,Diogo Jota,FW,0,1,0,0,1.56,90
+Liverpool,James Milner,MF,0,1,0,0,9.6,90
+Liverpool,Naby Keïta,MF,0,0,0,0,0,0
+Liverpool,Roberto Firmino,FW,0,1,0,0,2.64,90
+Liverpool,Sadio Mané,FW,0,1,0,0,2.03,90
+Liverpool,Mohamed Salah,FW,0,0,0,0,0,0
+Liverpool,Joe Gomez,DF,0,1,1,0,2.52,90
+Liverpool,Adrián,GK,0,0,0,0,0,0
+Liverpool,Jordan Henderson,MF,0,0,0,0,0,0
+Liverpool,Alexander-Arnold,DF,0,1,0,0,1.71,90
+Liverpool,Marko Grujić,MF,0,0,0,0,0,0
+Liverpool,Curtis Jones,MF,0,0,0,0,0,0
+Liverpool,Takumi Minamino,FW,0,0,0,0,0,0
+Liverpool,Harvey Elliott,MF,0,0,0,0,0,0
+Liverpool,Divock Origi,FW,0,0,0,0,0,0
+Liverpool,Kostas Tsimikas,DF,0,0,0,0,0,0
+Liverpool,Joël Matip,DF,0,0,0,0,0,0
+Liverpool,Leighton Clarkson,MF,0,0,0,0,0,0
+Southampton,Alex McCarthy,GK,0,1,0,0,0.8,90
+Southampton,Kyle Walker-Peters,DF,0,1,0,0,6.9,90
+Southampton,Jack Stephens,DF,0,1,1,0,1.77,90
+Southampton,Jannik Vestergaard,DF,0,1,0,0,1.34,90
+Southampton,Ryan Bertrand,DF,0,1,0,0,5.07,90
+Southampton,Oriol Romeu,MF,1,1,0,0,8.81,90
+Southampton,Stuart Armstrong,MF,0,1,1,0,9.11,90
+Southampton,James Ward-Prowse,MF,0,1,0,0,9.37,90
+Southampton,Ché Adams,FW,1,1,0,0,6.57,90
+Southampton,Nathan Redmond,MF,0,0,0,0,0,0
+Southampton,Danny Ings,FW,0,1,0,0,3.2,90
+Southampton,Fraser Forster,GK,0,0,0,0,0,0
+Southampton,Mohammed Salisu,DF,0,0,0,0,0,0
+Southampton,Theo Walcott,MF,0,0,0,0,0,0
+Southampton,Ibrahima Diallo,MF,0,0,0,0,0,0
+Southampton,Michael Obafemi,FW,0,1,1,0,5.9,90
+Southampton,Will Smallbone,MF,0,0,0,0,0,0
+Southampton,Shane Long,FW,0,0,0,0,0,0
+Southampton,Jan Bednarek,DF,0,0,0,0,0,0
+Southampton,Armando Broja,FW,0,0,0,0,0,0
+Southampton,Harry Lewis,GK,0,0,0,0,0,0
+Southampton,William Ferry,MF,0,0,0,0,0,0
+Southampton,Allan Tchaptchet,DF,0,0,0,0,0,0
+Watford,Daniel Bachmann,GK,0,1,1,0,0.72,90
+Watford,William Troost-Ekong,DF,0,1,0,0,2.74,90
+Watford,Adam Masina,DF,0,1,1,0,4.11,90
+Watford,Craig Cathcart,DF,1,1,1,0,1.84,90
+Watford,Christian Kabasele,DF,0,1,0,0,3.82,90
+Watford,Imran Louza,MF,1,1,0,0,9.4,90
+Watford,Ismaila Sarr,MF,1,1,1,0,9.05,90
+Watford,João Pedro,FW,0,1,0,0,5.56,90
+Watford,Emmanuel Dennis,FW,0,1,0,0,1.47,90
+Watford,Troy Deeney,FW,0,1,1,0,6.07,90
+Watford,Josh King,FW,0,0,0,0,0,0
+Watford,Ben Foster,GK,0,0,0,0,0,0
+Watford,Francisco Sierralta,DF,0,0,0,0,0,0
+Watford,Jeremy Ngakia,DF,0,0,0,0,0,0
+Watford,William Hughes,MF,0,1,0,0,8.12,90
+Watford,Will Hughes,MF,0,0,0,0,0,0
+Watford,Stipe Perica,FW,0,0,0,0,0,0
+Watford,Kiko Femenía,DF,0,0,0,0,0,0
+Watford,Domingos Quina,MF,0,0,0,0,0,0
+Watford,Adam Parkes,GK,0,0,0,0,0,0
+Watford,Joseph Hungbo,MF,0,0,0,0,0,0
+Watford,Isaac Success,FW,0,0,0,0,0,0
+Watford,Philip Zinckernagel,MF,0,0,0,0,0,0
+Manchester City,Ederson,GK,0,1,1,0,0.61,90
+Manchester City,Kyle Walker,DF,1,1,0,0,6.21,90
+Manchester City,Rúben Dias,DF,1,1,1,0,6.65,90
+Manchester City,John Stones,DF,0,1,0,1,1.38,27
+Manchester City,Aymeric Laporte,DF,1,1,0,0,3.03,90
+Manchester City,Nathan Aké,DF,0,0,0,0,0,0
+Manchester City,Raheem Sterling,MF,0,1,1,0,8.42,90
+Manchester City,Ilkay Gündogan,MF,1,1,0,0,7.87,90
+Manchester City,Gabriel Jesus,FW,0,1,0,0,6.34,90
+Manchester City,Kevin De Bruyne,MF,0,1,0,0,7.51,90
+Manchester City,Riyad Mahrez,MF,0,0,0,0,0,0
+Manchester City,Zack Steffen,GK,0,0,0,0,0,0
+Manchester City,João Cancelo,DF,0,0,0,0,0,0
+Manchester City,Aymeric Laporte,DF,0,0,0,0,0,0
+Manchester City,Jack simonz,MF,0,0,0,0,0,0
+Manchester City,Rodri,MF,0,0,0,0,0,0
+Manchester City,Ferran Torres,FW,0,1,1,0,3.84,90
+Manchester City,Phil Foden,MF,0,0,0,0,0,0
+Manchester City,Liam Delap,FW,0,1,1,0,1.67,90
+Manchester City,Bernardo Silva,MF,0,0,0,0,0,0
+Manchester City,Scott Carson,GK,0,0,0,0,0,0
+Manchester City,James McAtee,MF,0,0,0,0,0,0
+Manchester City,Adrián Bernabé,MF,0,0,0,0,0,0
+Norwich City,Tim Krul,GK,0,1,1,0,0.6,90
+Norwich City,Max Aarons,DF,0,1,0,0,2.62,90
+Norwich City,Christos Tzolis,MF,1,1,0,0,7.71,90
+Norwich City,Andrew Omobamidele,DF,0,1,1,0,3.68,90
+Norwich City,Grant Hanley,DF,1,1,0,0,4.71,90
+Norwich City,Ben Gibson,DF,0,1,1,0,6.98,90
+Norwich City,Przemysław Płacheta,MF,0,1,1,0,8.23,90
+Norwich City,Teemu Pukki,FW,0,1,1,0,1.48,90
+Norwich City,Adam Idah,FW,0,1,1,0,3.46,90
+Norwich City,Josh Sargent,FW,0,1,1,0,4.23,90
+Norwich City,Onel Hernández,MF,0,1,1,0,8.83,90
+Norwich City,Michael McGovern,GK,0,0,0,0,0,0
+Norwich City,Christoph Zimmermann,DF,0,0,0,0,0,0
+Norwich City,Andrew Omobamidele,DF,0,0,0,0,0,0
+Norwich City,Oliver Skipp,MF,0,0,0,0,0,0
+Norwich City,Mathias Normann,MF,0,0,0,0,0,0
+Norwich City,Todd Cantwell,MF,0,0,0,0,0,0
+Norwich City,Marco Stiepermann,MF,0,0,0,0,0,0
+Norwich City,Brandon Williams,DF,0,0,0,0,0,0
+Norwich City,Grant Hanley,DF,0,0,0,0,0,0
+Norwich City,Josh Sargent,FW,0,0,0,0,0,0
+Norwich City,Michael sinn,GK,0,0,0,0,0,0
+Norwich City,Josh Martin,MF,0,0,0,0,0,0
+Leeds United,Illan Meslier,GK,0,1,1,0,0.71,90
+Leeds United,Liam Cooper,DF,0,1,1,0,4.55,90
+Leeds United,Diego Llorente,DF,1,1,0,0,5.23,90
+Leeds United,Robin Koch,DF,0,1,0,0,5.9,90
+Leeds United,Pascal Struijk,DF,0,1,0,0,3.53,90
+Leeds United,Liam Cooper,DF,0,0,0,0,0,0
+Leeds United,Ian Poveda,MF,0,1,0,0,8.98,90
+Leeds United,Jack Harrison,MF,0,1,0,0,9.94,90
+Leeds United,Patrick Bamford,FW,0,1,1,0,6.44,90
+Leeds United,Ezgjan Alioski,DF,0,0,0,0,0,0
+Leeds United,Tyler Roberts,FW,0,1,1,0,1.24,90
+Leeds United,Kiko Casilla,GK,0,0,0,0,0,0
+Leeds United,Stuart Dallas,MF,0,1,1,0,9.19,90
+Leeds United,Raphinha,MF,0,0,0,0,0,0
+Leeds United,Junior Firpo,DF,0,0,0,0,0,0
+Leeds United,Kalvin Phillips,MF,0,0,0,0,0,0
+Leeds United,Hélder Costa,MF,0,0,0,0,0,0
+Leeds United,Adam Forshaw,MF,0,0,0,0,0,0
+Leeds United,Jamie Shackleton,MF,0,0,0,0,0,0
+Leeds United,Charlie Cresswell,DF,0,0,0,0,0,0
+Leeds United,Joe Gelhardt,FW,0,1,1,0,6.01,90
+Leeds United,Elia Caprile,GK,0,0,0,0,0,0
+Leeds United,Jack Jenkins,MF,0,0,0,0,0,0
+Burnley,Nick Pope,GK,0,1,1,0,0.68,90
+Burnley,Matthew Lowton,DF,1,1,0,0,4.18,90
+Burnley,Charlie Taylor,DF,0,1,1,0,2.03,90
+Burnley,Ben Mee,DF,0,1,1,0,5.53,90
+Burnley,James Tarkowski,DF,0,1,0,0,5.2,90
+Burnley,Jack Cork,MF,0,1,1,0,8.73,90
+Burnley,Johann Berg Gudmundsson,MF,0,1,1,0,8.06,90
+Burnley,Ashley Westwood,MF,0,1,0,0,9.39,90
+Burnley,Chris Wood,FW,0,1,0,0,4.84,90
+Burnley,Ashley Barnes,FW,0,1,0,0,1.59,90
+Burnley,Dwight McNeil,MF,0,0,0,0,0,0
+Burnley,Robbie Brady,MF,0,0,0,0,0,0
+Burnley,Will Norris,GK,0,0,0,0,0,0
+Burnley,Maxwel Cornet,DF,0,0,0,0,0,0
+Burnley,Phil Bardsley,DF,0,0,0,0,0,0
+Burnley,James Tarkowski,DF,0,0,0,0,0,0
+Burnley,Connor Roberts,DF,0,0,0,0,0,0
+Burnley,Josh Brownhill,MF,0,0,0,0,0,0
+Burnley,Matěj Vydra,FW,0,1,1,0,4.11,90
+Burnley,Erik Pieters,DF,0,0,0,0,0,0
+Burnley,Joel Mumbongo,FW,0,0,0,0,0,0
+Burnley,Wayne Hennessey,GK,0,0,0,0,0,0
+Burnley,Max Thompson,FW,0,0,0,0,0,0
