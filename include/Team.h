@@ -1,5 +1,5 @@
-#ifndef TEAH
-#define TEAH
+#ifndef TEAM_H
+#define TEAM_H
 
 #include "Player.h"
 #include "Coach.h"
