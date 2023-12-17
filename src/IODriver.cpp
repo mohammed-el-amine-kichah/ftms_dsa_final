@@ -6,7 +6,7 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-
+#include <string>
 
 IODriver::IODriver( string inputFileName, string outputFileName )
 {
@@ -21,7 +21,7 @@ vector<Team> IODriver::parseCSV( )
     string line = "";
     vector<Team> teams;
 
-    while ( getline(inputFile, line) )
+    while (getline(inputFile, line) )
     {
         
         stringstream inputString(line);
@@ -120,65 +120,31 @@ vector<Player> IODriver::readPlayersFromCSV(string inputFileName) {
     return players;
 }
 
-vector<Player> IODriver::readPlayers(string inputFileName) {
-    ifstream inputFile(inputFileName); // Open the file directly during initialization
+vector<Player> IODriver::readPlayers(string FileName) {
+    ifstream inputFile(FileName); // Open the file directly during initialization
 
-    if (!inputFile.is_open()) {
-        // Handle file open error here if needed
-        cerr << "Error opening file: " << inputFileName << endl;
-        return {}; // Return an empty vector in case of an error
-    }
-
+   
     string line;
     vector<Player> players;
-
-    while (getline(inputFile, line)) {
-        stringstream inputString(line);
-        string teamName;
-        string tempString;
-        string name;
-        string position;
-
-        int number;
-        int age;
-
-        // Parse team name
-        getline(inputString, teamName, ',');
-
-        // Parse player number
-        getline(inputString, tempString, ',');
-         try {
-    int number = stoi(tempString);
-} catch (const invalid_argument& e) {
-    cerr << "Failed to convert string daz"<<tempString <<" to integer: " << tempString << endl;
-    throw;
-}
-   
-
-        // Parse player name
-        getline(inputString, name, ',');
-
-        // Parse player age
-        getline(inputString, tempString, ',');
-        try {
-    int age = stoi(tempString);
-} catch (const invalid_argument& e) {
-    cerr << "Failed to convert string to integer: " << tempString << endl;
-    throw;
-}
-        
-
-        // Parse player position
-        getline(inputString, position, ',');
-        for (int i=)
+     while (getline(inputFile, line)) {
+                
+        }
+ 
+        for (int i=0; i<37; i++) {
+            string FileName = "player_details_week_" + to_string(i) + ".csv";
+            ifstream inputFile(FileName);
+            string line;
+            while (getline(inputFile, line)) {
+                
+        }
         // Add to players vector
-        players.emplace_back(teamName, number, name, age, position);
+       
     }
 
     inputFile.close();
     return players;
 }
-
+}
 
 
 vector<Coach> IODriver::readCoachesFromCSV(string inputFileName) {
@@ -314,7 +280,7 @@ map<double, int> IODriver::createScoringDistribution( string teamName )
     double proportion = 0;
     int position = 0;
     // cout << teamName << "\n";
-    for ( int i=0; i < goals[goals.size()-1]; i++)
+    for( int i=0; i < goals[goals.size()-1]; i++)
     {
         int count = 0;
         while ( goals[position] == i)
@@ -376,4 +342,70 @@ void IODriver::writeResultToCSV( vector<Team> leaguePositions )
 
     outputFile << "\n";
     outputFile.close();
+
+}
+
+vector<Player> readCSVFiles() {
+    vector<Player> players;
+
+    for (int i = 1; i <= 38; ++i) {
+        ifstream file("file" + to_string(i) + ".csv");
+        if (!file.is_open()) {
+            cerr << "Unable to open file" << to_string(i) << ".csv" << endl;
+            continue;
+        }
+
+        string line;
+        getline(file, line); // Skip the header line
+        while (getline(file, line)) {
+            istringstream iss(line);
+            string teamName, playerName, position;
+            int number, goals, onPitch, yellow, red, dist, start, end, played;
+
+            if (getline(iss, teamName, ',') &&
+                getline(iss, playerName, ',') &&
+                iss >> number >> ws >> position >> ws >> goals >> onPitch >> yellow >> red >> dist >> start >> end >> played) {
+                
+                bool playerExists = false;
+                for(auto& player : players) {
+                    if (player.teamName == teamName && player.playerName == playerName) {
+                        playerExists = true;
+                        player.numberOfGoals.push_back(goals);
+                        player.isOnPitch.push_back(onPitch);
+                        player.isYellow.push_back(yellow);
+                        player.isRed.push_back(red);
+                        player.distance.push_back(dist);
+                        player.startTime.push_back(start);
+                        player.endTime.push_back(end);
+                        player.timePlayed.push_back(played);
+                        break;
+                    }
+                }
+
+                if (!playerExists) {
+                    Player newPlayer {
+                        teamName,
+                        playerName,
+                        number,
+                        position,
+                        { goals },
+                        { onPitch },
+                        { yellow },
+                        { red },
+                        { dist },
+                        { start },
+                        { end },
+                        { played }
+                    };
+                    players.push_back(newPlayer);
+                }
+            } else {
+                cerr << "Error reading line in file" << to_string(i) << ".csv" << endl;
+            }
+        }
+
+        file.close();
+    }
+
+    return players;
 }

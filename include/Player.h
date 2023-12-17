@@ -23,9 +23,17 @@ public:
     int getStartTime() const { return startTime; }
     int getReplacedTime() const { return replacedTime; }
     int getTimePlayed() const { return timePlayed; }
+    string getTeam() const { return team; }
     void setGoals(int goalss) { this->goals = goalss; }
     bool operator<(const Player& second) const;
-
+    vector<int> numberOfGoals;
+    vector<int> isOnPitch;
+    vector<int> isYellow;
+    vector<int> isRed;
+    vector<int> distancea;
+    vector<int> startTimea;
+    vector<int> endTime;
+    vector<int> timePlayeda;
 private:
     string name;
     string team;
@@ -45,6 +53,7 @@ private:
     int timePlayed; // in minutes
     int gamesStarted;
     int gamesPlayed;
+
 };
 
 #endif
