@@ -1,0 +1,461 @@
+Teamname,number,player,age,position
+Arsenal,1,Bernd Leno,29,GK
+Arsenal,2,Tomáš Holes,28,DF
+Arsenal,3,Kieran Tierney,24,DF
+Arsenal,4,Ben White,23,DF
+Arsenal,5,Thomas Partey,28,MF
+Arsenal,6,Gabriel Magalhães,23,DF
+Arsenal,7,Bukayo Saka,20,MF
+Arsenal,8,Martin Ødegaard,22,MF
+Arsenal,9,Alexandre Lacazette,30,FW
+Arsenal,10,Pierre-Emerick Aubameyang,32,FW
+Arsenal,11,Mohamed Elneny,29,MF
+Arsenal,12,Willian,33,MF
+Arsenal,13,Alex Rúnarsson,26,GK
+Arsenal,14,Pablo Marí,27,DF
+Arsenal,15,Eddie Nketiah,22,FW
+Arsenal,16,Rob Holding,25,DF
+Arsenal,17,Cédric Soares,29,DF
+Arsenal,18,Dani Ceballos,25,MF
+Arsenal,19,Nicolas Pépé,26,MF
+Arsenal,20,Nuno Tavares,21,DF
+Arsenal,21,Calum Chambers,26,DF
+Arsenal,22,Emile Smith Rowe,21,MF
+Arsenal,23,Eddie Nketiah,22,FW
+Aston Villa,1,Emiliano Martínez,29,GK
+Aston Villa,2,Matt Targett,25,DF
+Aston Villa,3,Tyrone Mings,28,DF
+Aston Villa,4,Ezri Konsa,23,DF
+Aston Villa,5,Douglas Luiz,23,MF
+Aston Villa,6,Tyler Roberts,22,FW
+Aston Villa,7,John McGinn,27,MF
+Aston Villa,8,Danny Ings,29,FW
+Aston Villa,9,Emi Buendía,24,MF
+Aston Villa,10,Jack Grealish,26,MF
+Aston Villa,11,Anwar El Ghazi,26,MF
+Aston Villa,12,Jacob Ramsey,20,MF
+Aston Villa,13,Jed Steer,29,GK
+Aston Villa,14,Conor Hourihane,30,MF
+Aston Villa,15,Björn Engels,26,DF
+Aston Villa,16,Trezeguet,26,MF
+Aston Villa,17,Keinan Davis,23,FW
+Aston Villa,18,Morgan Sanson,27,MF
+Aston Villa,19,Matty Cash,24,DF
+Aston Villa,20,Axel Tuanzebe,23,DF
+Aston Villa,21,Marvelous Nakamba,27,MF
+Aston Villa,22,Leon Bailey,24,MF
+Aston Villa,23,John casper,27,MF
+Brentford,1,David Raya,26,GK
+Brentford,2,Mads Bech Sørensen,22,DF
+Brentford,3,Rico Henry,24,DF
+Brentford,4,Pontus Jansson,30,DF
+Brentford,5,Ethan Pinnock,28,DF
+Brentford,6,Christian Nørgaard,27,MF
+Brentford,7,Sergi Canós,24,MF
+Brentford,8,Marcus Forss,22,FW
+Brentford,9,Ivan Toney,25,FW
+Brentford,10,Josh Dasilva,22,MF
+Brentford,11,Bryan Mbeumo,22,MF
+Brentford,12,Mathias Jensen,25,MF
+Brentford,13,Dom Thompson,20,DF
+Brentford,14,Shandon Baptiste,23,MF
+Brentford,15,Charlie Goode,25,DF
+Brentford,16,Fin Stevens,18,DF
+Brentford,17,Emiliano Marcondes,26,MF
+Brentford,18,Alvaro Fernandez,21,DF
+Brentford,19,Jan Zamburek,20,MF
+Brentford,20,Mads Bidstrup,20,MF
+Brentford,21,Josh Clarke,26,DF
+Brentford,22,David Titov,21,DF
+Brentford,23,Max Haygarth,18,MF
+Brighton,1,Robert Sanchez,23,GK
+Brighton,2,Tariq Lamptey,20,DF
+Brighton,3,Ben White,23,DF
+Brighton,4,Adam Webster,26,DF
+Brighton,5,Lewis Dunk,29,DF
+Brighton,6,Dale Stephens,32,MF
+Brighton,7,Neal Maupay,25,FW
+Brighton,8,Yves Bissouma,25,MF
+Brighton,9,Aaron Connolly,21,FW
+Brighton,10,Leandro Trossard,26,MF
+Brighton,11,Pascal Groß,30,MF
+Brighton,12,Florin Andone,28,FW
+Brighton,13,Danny Welbeck,30,FW
+Brighton,14,Jason Steele,30,GK
+Brighton,15,Joël Veltman,29,DF
+Brighton,16,Steven Alzate,22,MF
+Brighton,17,Alexis Mac Allister,23,MF
+Brighton,18,Jakub Moder,22,MF
+Brighton,19,Enock Mwepu,23,MF
+Brighton,20,Andi Zeqiri,22,FW
+Brighton,21,Christian Walton,25,GK
+Brighton,22,Reda Khadra,20,MF
+Brighton,23,Max Sanders,22,MF
+Burnley,1,Nick Pope,29,GK
+Burnley,2,Matthew Lowton,32,DF
+Burnley,3,Charlie Taylor,28,DF
+Burnley,4,Ben Mee,32,DF
+Burnley,5,James Tarkowski,28,DF
+Burnley,6,Jack Cork,32,MF
+Burnley,7,Johann Berg Gudmundsson,30,MF
+Burnley,8,Ashley Westwood,31,MF
+Burnley,9,Chris Wood,29,FW
+Burnley,10,Ashley Barnes,32,FW
+Burnley,11,Dwight McNeil,21,MF
+Burnley,12,Robbie Brady,29,MF
+Burnley,13,Will Norris,28,GK
+Burnley,14,Maxwel Cornet,24,DF
+Burnley,15,Phil Bardsley,36,DF
+Burnley,16,James Tarkowski,28,DF
+Burnley,17,Connor Roberts,25,DF
+Burnley,18,Josh Brownhill,25,MF
+Burnley,19,Matěj Vydra,29,FW
+Burnley,20,Erik Pieters,33,DF
+Burnley,21,Joel Mumbongo,23,FW
+Burnley,22,Wayne Hennessey,34,GK
+Burnley,23,Max Thompson,19,FW
+Chelsea,1,Kepa Arrizabalaga,27,GK
+Chelsea,2,Antonio Rüdiger,28,DF
+Chelsea,3,Marcos Alonso,30,DF
+Chelsea,4,Andreas Christensen,25,DF
+Chelsea,5,Jorginho,29,MF
+Chelsea,6,Thiago Silva,37,DF
+Chelsea,7,N'Golo Kanté,30,MF
+Chelsea,8,Mateo Kovačić,27,MF
+Chelsea,9,Romelu Lukaku,28,FW
+Chelsea,10,Christian Pulisic,23,FW
+Chelsea,11,Timo Werner,25,FW
+Chelsea,12,Ruben Loftus-Cheek,25,MF
+Chelsea,13,Willy Caballero,40,GK
+Chelsea,14,Tammy Abraham,24,FW
+Chelsea,15,Kurt Zouma,26,DF
+Chelsea,16,Edouard Mendy,29,GK
+Chelsea,17,Saul Niguez,26,MF
+Chelsea,18,Marco van Ginkel,28,MF
+Chelsea,19,Mason Mount,22,MF
+Chelsea,20,Callum Hudson-Odoi,20,MF
+Chelsea,21,Reece James,21,DF
+Chelsea,22,Christian Pulisic,23,FW
+Chelsea,23,Emerson Palmieri,27,DF
+Crystal Palace,1,Vicente Guaita,34,GK
+Crystal Palace,2,Joachim Andersen,25,DF
+Crystal Palace,3,Tyrick Mitchell,22,DF
+Crystal Palace,4,Patrick van Aanholt,31,DF
+Crystal Palace,5,James Tomkins,32,DF
+Crystal Palace,6,Scott Dann,34,DF
+Crystal Palace,7,Michael Olise,19,MF
+Crystal Palace,8,Cheikhou Kouyaté,32,MF
+Crystal Palace,9,Christian Benteke,30,FW
+Crystal Palace,10,Wilfried Zaha,28,MF
+Crystal Palace,11,Jeffrey Schlupp,28,MF
+Crystal Palace,12,Jack Butland,28,GK
+Crystal Palace,13,Connor Wickham,28,FW
+Crystal Palace,14,Andros Townsend,30,MF
+Crystal Palace,15,Luka Milivojević,30,MF
+Crystal Palace,16,James McArthur,33,MF
+Crystal Palace,17,Jordan Ayew,30,FW
+Crystal Palace,18,Nathaniel Clyne,30,DF
+Crystal Palace,19,Martin Kelly,31,DF
+Crystal Palace,20,Joel Ward,31,DF
+Crystal Palace,21,Wayne Hennessey,34,GK
+Crystal Palace,22,Odsonne Édouard,23,FW
+Crystal Palace,23,Will Hughes,26,MF
+Everton,1,Jordan Pickford,27,GK
+Everton,2,Mason Holgate,24,DF
+Everton,3,Yerry Mina,26,DF
+Everton,4,Michael Keane,28,DF
+Everton,5,Ben Godfrey,23,DF
+Everton,6,Allan,30,MF
+Everton,7,André Gomes,28,MF
+Everton,8,Fabian Delph,31,MF
+Everton,9,Dominic Calvert-Lewin,24,FW
+Everton,10,Gylfi Sigurðsson,32,MF
+Everton,11,James Rodríguez,30,MF
+Everton,12,Alex Iwobi,25,MF
+Everton,13,Asmir Begović,34,GK
+Everton,14,Abdoulaye Doucouré,28,MF
+Everton,15,Moise Kean,21,FW
+Everton,16,Andros Townsend,30,MF
+Everton,17,Alexander-Arnold,23,DF
+Everton,18,Anthony Gordon,20,MF
+Everton,19,Jonjoe Kenny,24,DF
+Everton,20,Denis Adeniran,22,MF
+Everton,21,André Gomes,28,MF
+Everton,22,Andy Lonergan,37,GK
+Everton,23,Harry Tyrer,20,GK
+Leeds United,1,Illan Meslier,21,GK
+Leeds United,2,Liam Cooper,30,DF
+Leeds United,3,Diego Llorente,28,DF
+Leeds United,4,Robin Koch,25,DF
+Leeds United,5,Pascal Struijk,22,DF
+Leeds United,6,Liam Cooper,30,DF
+Leeds United,7,Ian Poveda,21,MF
+Leeds United,8,Jack Harrison,24,MF
+Leeds United,9,Patrick Bamford,28,FW
+Leeds United,10,Ezgjan Alioski,29,DF
+Leeds United,11,Tyler Roberts,22,FW
+Leeds United,12,Kiko Casilla,35,GK
+Leeds United,13,Stuart Dallas,30,MF
+Leeds United,14,Raphinha,24,MF
+Leeds United,15,Junior Firpo,24,DF
+Leeds United,16,Kalvin Phillips,25,MF
+Leeds United,17,Hélder Costa,27,MF
+Leeds United,18,Adam Forshaw,29,MF
+Leeds United,19,Jamie Shackleton,21,MF
+Leeds United,20,Charlie Cresswell,19,DF
+Leeds United,21,Joe Gelhardt,19,FW
+Leeds United,22,Elia Caprile,20,GK
+Leeds United,23,Jack Jenkins,20,MF
+Leicester City,1,Kasper Schmeichel,34,GK
+Leicester City,2,Wesley Fofana,20,DF
+Leicester City,3,James Justin,23,DF
+Leicester City,4,Caglar Söyüncü,25,DF
+Leicester City,5,Ryan Bertrand,32,DF
+Leicester City,6,Jonny Evans,33,DF
+Leicester City,7,Youri Tielemans,24,MF
+Leicester City,8,James Maddison,24,MF
+Leicester City,9,Jamie Vardy,34,FW
+Leicester City,10,Kelechi Iheanacho,24,FW
+Leicester City,11,Harvey Barnes,23,MF
+Leicester City,12,Danny Ward,28,GK
+Leicester City,13,Marc Albrighton,31,MF
+Leicester City,14,Ayoze Pérez,28,MF
+Leicester City,15,Wes Morgan,37,DF
+Leicester City,16,Hamza Choudhury,23,MF
+Leicester City,17,Dennis Praet,27,MF
+Leicester City,18,Daniel Amartey,26,DF
+Leicester City,19,Ricardo Pereira,28,DF
+Leicester City,20,Nampalys Mendy,29,MF
+Leicester City,21,Patson Daka,23,FW
+Leicester City,22,Ademola Lookman,23,MF
+Leicester City,23,amine khalilo,25,DF
+Liverpool,1,Alisson,28,GK
+Liverpool,2,Nathaniel Phillips,24,DF
+Liverpool,3,Fabinho,27,MF
+Liverpool,4,Virgil van Dijk,30,DF
+Liverpool,5,Georginio Wijnaldum,30,MF
+Liverpool,6,Diogo Jota,24,FW
+Liverpool,7,James Milner,35,MF
+Liverpool,8,Naby Keïta,26,MF
+Liverpool,9,Roberto Firmino,30,FW
+Liverpool,10,Sadio Mané,29,FW
+Liverpool,11,Mohamed Salah,29,FW
+Liverpool,12,Joe Gomez,24,DF
+Liverpool,13,Adrián,34,GK
+Liverpool,14,Jordan Henderson,31,MF
+Liverpool,15,Alexander-Arnold,23,DF
+Liverpool,16,Marko Grujić,25,MF
+Liverpool,17,Curtis Jones,20,MF
+Liverpool,18,Takumi Minamino,26,FW
+Liverpool,19,Harvey Elliott,18,MF
+Liverpool,20,Divock Origi,26,FW
+Liverpool,21,Kostas Tsimikas,25,DF
+Liverpool,22,Joël Matip,30,DF
+Liverpool,23,Leighton Clarkson,19,MF
+Manchester City,1,Ederson,28,GK
+Manchester City,2,Kyle Walker,31,DF
+Manchester City,3,Rúben Dias,24,DF
+Manchester City,4,John Stones,27,DF
+Manchester City,5,Aymeric Laporte,27,DF
+Manchester City,6,Nathan Aké,26,DF
+Manchester City,7,Raheem Sterling,26,MF
+Manchester City,8,Ilkay Gündogan,30,MF
+Manchester City,9,Gabriel Jesus,24,FW
+Manchester City,10,Kevin De Bruyne,30,MF
+Manchester City,11,Riyad Mahrez,30,MF
+Manchester City,12,Zack Steffen,26,GK
+Manchester City,13,João Cancelo,27,DF
+Manchester City,14,Aymeric Laporte,27,DF
+Manchester City,15,Jack simonz,26,MF
+Manchester City,16,Rodri,25,MF
+Manchester City,17,Ferran Torres,21,FW
+Manchester City,18,Phil Foden,21,MF
+Manchester City,19,Liam Delap,18,FW
+Manchester City,20,Bernardo Silva,27,MF
+Manchester City,21,Scott Carson,36,GK
+Manchester City,22,James McAtee,18,MF
+Manchester City,23,Adrián Bernabé,20,MF
+Manchester United,1,David de Gea,30,GK
+Manchester United,2,Victor Lindelöf,27,DF
+Manchester United,3,Eric Bailly,27,DF
+Manchester United,4,Phil Jones,29,DF
+Manchester United,5,Harry Maguire,28,DF
+Manchester United,6,Luke Shaw,26,DF
+Manchester United,7,Edinson Cavani,34,FW
+Manchester United,8,Juan Mata,33,MF
+Manchester United,9,Anthony Martial,25,FW
+Manchester United,10,Marcus Rashford,24,FW
+Manchester United,11,Mason Greenwood,20,FW
+Manchester United,12,Lee Grant,38,GK
+Manchester United,13,Jesse Lingard,28,MF
+Manchester United,14,Andreas Pereira,25,MF
+Manchester United,15,Alex Telles,28,DF
+Manchester United,16,Paul Pogba,28,MF
+Manchester United,17,Fred,28,MF
+Manchester United,18,Bruno Fernandes,27,MF
+Manchester United,19,Amad Diallo,19,FW
+Manchester United,20,Diogo Dalot,22,DF
+Manchester United,21,Donny van de Beek,24,MF
+Manchester United,22,Dean Henderson,24,GK
+Manchester United,23,Shola Shoretire,17,MF
+Newcastle United,1,Karl Darlow,30,GK
+Newcastle United,2,Ciaran Clark,32,DF
+Newcastle United,3,Paul Dummett,30,DF
+Newcastle United,4,Federico Fernández,32,DF
+Newcastle United,5,Jamaal Lascelles,27,DF
+Newcastle United,6,Jonjo Shelvey,29,MF
+Newcastle United,7,Joelinton,25,FW
+Newcastle United,8,Jeff Hendrick,29,MF
+Newcastle United,9,Callum Wilson,29,FW
+Newcastle United,10,Allan Saint-Maximin,24,MF
+Newcastle United,11,Miguel Almirón,27,MF
+Newcastle United,12,Mark Gillespie,29,GK
+Newcastle United,13,Emil Krafth,27,DF
+Newcastle United,14,Isaac Hayden,26,MF
+Newcastle United,15,Jacob Murphy,26,MF
+Newcastle United,16,Sean Longstaff,23,MF
+Newcastle United,17,Joe shelby,25,FW
+Newcastle United,18,Matt Ritchie,32,MF
+Newcastle United,19,Joe Willock,22,MF
+Newcastle United,20,Javier Manquillo,27,DF
+Newcastle United,21,vini Wilson,29,FW
+Newcastle United,22,Paul guergour,30,DF
+Newcastle United,23,Joe blace,19,MF
+Norwich City,1,Tim Krul,33,GK
+Norwich City,2,Max Aarons,21,DF
+Norwich City,3,Christos Tzolis,19,MF
+Norwich City,4,Andrew Omobamidele,19,DF
+Norwich City,5,Grant Hanley,29,DF
+Norwich City,6,Ben Gibson,28,DF
+Norwich City,7,Przemysław Płacheta,23,MF
+Norwich City,8,Teemu Pukki,31,FW
+Norwich City,9,Adam Idah,20,FW
+Norwich City,10,Josh Sargent,21,FW
+Norwich City,11,Onel Hernández,28,MF
+Norwich City,12,Michael McGovern,37,GK
+Norwich City,13,Christoph Zimmermann,28,DF
+Norwich City,14,Andrew Omobamidele,19,DF
+Norwich City,15,Oliver Skipp,21,MF
+Norwich City,16,Mathias Normann,25,MF
+Norwich City,17,Todd Cantwell,23,MF
+Norwich City,18,Marco Stiepermann,30,MF
+Norwich City,19,Brandon Williams,21,DF
+Norwich City,20,Grant Hanley,29,DF
+Norwich City,21,Josh Sargent,21,FW
+Norwich City,22,Michael sinn,37,GK
+Norwich City,23,Josh Martin,19,MF
+Southampton,1,Alex McCarthy,31,GK
+Southampton,2,Kyle Walker-Peters,24,DF
+Southampton,3,Jack Stephens,27,DF
+Southampton,4,Jannik Vestergaard,29,DF
+Southampton,5,Ryan Bertrand,32,DF
+Southampton,6,Oriol Romeu,30,MF
+Southampton,7,Stuart Armstrong,29,MF
+Southampton,8,James Ward-Prowse,27,MF
+Southampton,9,Ché Adams,25,FW
+Southampton,10,Nathan Redmond,27,MF
+Southampton,11,Danny Ings,29,FW
+Southampton,12,Fraser Forster,33,GK
+Southampton,13,Mohammed Salisu,22,DF
+Southampton,14,Theo Walcott,32,MF
+Southampton,15,Ibrahima Diallo,22,MF
+Southampton,16,Michael Obafemi,21,FW
+Southampton,17,Will Smallbone,21,MF
+Southampton,18,Shane Long,34,FW
+Southampton,19,Jan Bednarek,25,DF
+Southampton,20,Armando Broja,20,FW
+Southampton,21,Harry Lewis,24,GK
+Southampton,22,William Ferry,22,MF
+Southampton,23,Allan Tchaptchet,20,DF
+Tottenham,1,Hugo Lloris,34,GK
+Tottenham,2,Matt Doherty,29,DF
+Tottenham,3,Sergio Reguilón,24,DF
+Tottenham,4,Toby Alderweireld,32,DF
+Tottenham,5,Pierre-Emile Højbjerg,26,MF
+Tottenham,6,Davinson Sánchez,25,DF
+Tottenham,7,Heung-Min Son,29,FW
+Tottenham,8,Harry Winks,25,MF
+Tottenham,9,Harry Kane,28,FW
+Tottenham,10,Dele Alli,25,MF
+Tottenham,11,Erik Lamela,29,MF
+Tottenham,12,Joe Hart,34,GK
+Tottenham,13,Joe Rodon,23,DF
+Tottenham,14,Cristian Romero,23,DF
+Tottenham,15,Eric Dier,27,DF
+Tottenham,16,Oliver Skipp,21,MF
+Tottenham,17,Moussa Sissoko,32,MF
+Tottenham,18,Giovani Lo Celso,25,MF
+Tottenham,19,Steven Bergwijn,23,MF
+Tottenham,20,Emerson Royal,22,DF
+Tottenham,21,Jack Clarke,21,MF
+Tottenham,22,Brandon Austin,23,GK
+Tottenham,23,Harvey White,20,MF
+Watford,1,Daniel Bachmann,27,GK
+Watford,2,William Troost-Ekong,28,DF
+Watford,3,Adam Masina,27,DF
+Watford,4,Craig Cathcart,32,DF
+Watford,5,Christian Kabasele,30,DF
+Watford,6,Imran Louza,22,MF
+Watford,7,Ismaila Sarr,23,MF
+Watford,8,João Pedro,19,FW
+Watford,9,Emmanuel Dennis,24,FW
+Watford,10,Troy Deeney,33,FW
+Watford,11,Josh King,29,FW
+Watford,12,Ben Foster,38,GK
+Watford,13,Francisco Sierralta,24,DF
+Watford,14,Jeremy Ngakia,20,DF
+Watford,15,William Hughes,26,MF
+Watford,16,Will Hughes,26,MF
+Watford,17,Stipe Perica,25,FW
+Watford,18,Kiko Femenía,30,DF
+Watford,19,Domingos Quina,21,MF
+Watford,20,Adam Parkes,21,GK
+Watford,21,Joseph Hungbo,22,MF
+Watford,22,Isaac Success,25,FW
+Watford,23,Philip Zinckernagel,26,MF
+West Ham,1,Lukasz Fabianski,36,GK
+West Ham,2,Winston Reid,33,DF
+West Ham,3,Aaron Cresswell,31,DF
+West Ham,4,Fabian Balbuena,30,DF
+West Ham,5,Vladimír Coufal,29,DF
+West Ham,6,Angelo Ogbonna,33,DF
+West Ham,7,Andriy Yarmolenko,31,MF
+West Ham,8,Manuel Lanzini,28,MF
+West Ham,9,Michail Antonio,31,FW
+West Ham,10,Mark Noble,34,MF
+West Ham,11,Said Benrahma,26,MF
+West Ham,12,Darren Randolph,34,GK
+West Ham,13,Tomáš Souček,26,MF
+West Ham,14,Issa Diop,24,DF
+West Ham,15,Craig Dawson,31,DF
+West Ham,16,Declan Rice,22,MF
+West Ham,17,Pablo Fornals,25,MF
+West Ham,18,Jarrod Bowen,24,MF
+West Ham,19,Andriy Yarmolenko,31,MF
+West Ham,20,Arthur Masuaku,27,DF
+West Ham,21,Conor Coventry,21,MF
+West Ham,22,Ademipo Odubeko,18,FW
+West Ham,23,David Martin,35,GK
+Wolves,1,Rui Patrício,33,GK
+Wolves,2,Max Kilman,24,DF
+Wolves,3,Romain Saïss,31,DF
+Wolves,4,Conor Coady,28,DF
+Wolves,5,Fernando Marçal,32,DF
+Wolves,6,Nélson Semedo,27,DF
+Wolves,7,Rúben Neves,24,MF
+Wolves,8,Rúben Neves,24,MF
+Wolves,9,Adama Traoré,25,MF
+Wolves,10,Raúl Jiménez,30,FW
+Wolves,11,Francisco Trincão,21,MF
+Wolves,12,John Ruddy,34,GK
+Wolves,13,Leander Dendoncker,26,MF
+Wolves,14,João Moutinho,35,MF
+Wolves,15,Willian José,29,FW
+Wolves,16,João Moutinho,35,MF
+Wolves,17,Adama Traoré,25,MF
+Wolves,18,Marçal,32,DF
+Wolves,19,Patrick Cutrone,23,FW
+Wolves,20,Meritan Shabani,22,MF
+Wolves,21,Christian Marques,19,DF
+Wolves,22,Theo Corbeanu,19,FW
+Wolves,23,Andreas Söndergaard,21,GK
