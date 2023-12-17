@@ -120,6 +120,64 @@ vector<Player> IODriver::readPlayersFromCSV(string inputFileName) {
     return players;
 }
 
+vector<Player> IODriver::readPlayers(string inputFileName) {
+    ifstream inputFile(inputFileName); // Open the file directly during initialization
+
+    if (!inputFile.is_open()) {
+        // Handle file open error here if needed
+        cerr << "Error opening file: " << inputFileName << endl;
+        return {}; // Return an empty vector in case of an error
+    }
+
+    string line;
+    vector<Player> players;
+
+    while (getline(inputFile, line)) {
+        stringstream inputString(line);
+        string teamName;
+        string tempString;
+        string name;
+        string position;
+
+        int number;
+        int age;
+
+        // Parse team name
+        getline(inputString, teamName, ',');
+
+        // Parse player number
+        getline(inputString, tempString, ',');
+         try {
+    int number = stoi(tempString);
+} catch (const invalid_argument& e) {
+    cerr << "Failed to convert string daz"<<tempString <<" to integer: " << tempString << endl;
+    throw;
+}
+   
+
+        // Parse player name
+        getline(inputString, name, ',');
+
+        // Parse player age
+        getline(inputString, tempString, ',');
+        try {
+    int age = stoi(tempString);
+} catch (const invalid_argument& e) {
+    cerr << "Failed to convert string to integer: " << tempString << endl;
+    throw;
+}
+        
+
+        // Parse player position
+        getline(inputString, position, ',');
+        for (int i=)
+        // Add to players vector
+        players.emplace_back(teamName, number, name, age, position);
+    }
+
+    inputFile.close();
+    return players;
+}
 
 
 

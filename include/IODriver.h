@@ -35,6 +35,7 @@ private:
         void createCSVHeader();
         void writeResultToCSV( vector<Team> leaguePositions );
         vector<Player> readPlayersFromCSV (string);
+        vector<Player> readPlayers(string);
         vector<Coach> readCoachesFromCSV (string);
         vector<President> readPresidentsFromCSV (string);
 
