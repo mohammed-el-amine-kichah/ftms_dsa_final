@@ -2,16 +2,19 @@
 #define GAME_H
 
 #include "Team.h"
+#include "Date.h"
 #include <string>
 
 class Game
 {
 private:
 
-    Team *homeTeam;      // Pointer to team playing at home during this game.
-    Team *awayTeam;      // Pointer to team playing away during this game.
+    Team homeTeam;      // Pointer to team playing at home during this game.
+    Team awayTeam;      // Pointer to team playing away during this game.
     int homeTeamGoals;   // Amount of goals score by home team.
     int awayTeamGoals;   // Amount of goals score by away team.
+    Date match;
+    int duration;
 
     vector<Player*> activeHomePlayers;
     vector<Player*> activeAwayPlayers;
@@ -21,7 +24,10 @@ private:
     vector<Player*> awayWeightedPlayers;
 public:
 
-    Game() {}
+    Game() : homeTeam(""), awayTeam(""), homeTeamGoals(0), awayTeamGoals(0), duration(0) {}
+
+     Game(const Team& home, const Team& away, int homeGoals, int awayGoals, const Date matchDate, int gameDuration) 
+    : homeTeam(home), awayTeam(away), homeTeamGoals(homeGoals), awayTeamGoals(awayGoals), match(matchDate), duration(gameDuration) {}
     ~Game() {}
 
     /**
@@ -53,6 +59,9 @@ public:
     void getScore();
     void printActivePlayers(const vector<Player*> &players) const;
     vector<Player*> getPlayersScoredGame() const {return PlayersScoredGame;};
+    vector<Game> readGamesFromFiles();
+    void printGameInfo();
+    Date getday() const {return match;}
 };
 
 #endif

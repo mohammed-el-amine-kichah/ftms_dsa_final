@@ -6,6 +6,7 @@
 Team::Team( std::string name1)
 {
     name = name1;
+    
     totalGoalsFor = 0;
     totalGoalsAgainst = 0;
     totalPoints = 0;

@@ -1,19 +1,11 @@
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-    
-//     system("python3  ../draw/draw.py ");
-//     return 0;
-// }
-
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream>
 #include "../include/Team.h"
 #include "../include/Player.h"
-
+#include "../include/Game.h"
+#include "../include/Date.h"
 
 using namespace std;
 
@@ -44,58 +36,6 @@ vector<Team> readTeamsFromCSV(const string& filename) {
     return teams;
 }
 
-
-// vector<Player> readCSVFiles() {
-//     vector<Player> players;
-
-//     for (int i = 1; i <= 38; ++i) {
-//         ifstream file("../data/data-final/match_details_week_" + to_string(i) + ".csv");
-//         if (!file.is_open()) {
-//             cerr << "Unable to open file" << to_string(i) << ".csv" << endl;
-//             continue;
-//         }
-
-//         string line;
-//         getline(file, line); // Skip the header line
-//         while (getline(file, line)) {
-//             istringstream iss(line);
-//             string teamName, playerName, position;
-//             int number, goals, onPitch, yellow, red, dist, start, end, played;
-
-//             if (getline(iss, teamName, ',') &&
-//                 getline(iss, playerName, ',') &&
-//                 iss >> number >> ws >> position >> ws >> goals >> onPitch >> yellow >> red >> dist >> start >> end >> played) {
-                
-//                 bool playerExists = false;
-//                 for(auto& player : players) {
-//                     if (player.getTeam() == teamName && player.getName() == playerName) {
-//                         playerExists = true;
-//                         player.numberOfGoals.push_back(goals);
-//                         player.isOnPitch.push_back(onPitch);
-//                         player.isYellow.push_back(yellow);
-//                         player.isRed.push_back(red);
-//                         player.distancea.push_back(dist);
-//                         player.startTimea.push_back(start);
-//                         player.endTime.push_back(end);
-//                         player.timePlayeda.push_back(played);
-//                         break;
-//                     }
-//                 }
-
-//                 if (!playerExists) {
-//                     Player newPlayer(teamName, number, playerName, 0, position);
-//                     players.push_back(newPlayer);
-//                 }
-//             } else {
-//                 cerr << "Error reading line in file" << to_string(i) << ".csv" << endl;
-//             }
-//         }
-
-//         file.close();
-//     }
-
-//     return players;
-// }
 
 vector<Player> readCSVFiles() {
     vector<Player> players;
@@ -146,6 +86,7 @@ vector<Player> readCSVFiles() {
                     if (player.getTeam() == teamName && player.getName() == playerName) {
                         playerExists = true;
                         player.numberOfGoals.push_back(goals);
+                        player.setGoals(player.getGoals() + goals);
                         player.isOnPitch.push_back(onPitch);
                         player.isYellow.push_back(yellow);
                         player.isRed.push_back(red);
@@ -195,11 +136,14 @@ int main() {
         cout<<team.getName()<<endl;
         cout<<team.distancea[37]<<endl;
         cout<<team.numberOfGoals[37]<<endl;
-}
-
-
-
+        }
     }
-    //system("python3  ../draw/draw.py ");
+    Game g;
+    
+    vector <Game> allgames = g.readGamesFromFiles();
+    for (auto game : allgames) {
+        game.printGameInfo();
+    }
+    system("python3  ../draw/draw.py ");
     return 0;
 }

@@ -23,20 +23,11 @@ private:
 
 public:
 
-    /**
-        Default constructor and destructor.
-    */
-   
     ~Team() {}
 
-    /**
-        Constructor for simulations that only take season
-    */
+
     Team( string name1);
 
-    /**
-        Accessor methods.
-    */
     string getName() { return name; }
     vector<Player> getPlayers() { return players; }
     int getTotalGoalsfor() { return totalGoalsFor; }

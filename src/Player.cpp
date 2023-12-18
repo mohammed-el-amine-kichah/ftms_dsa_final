@@ -17,12 +17,6 @@ bool Player::operator < (const Player &second) const {
     if (this->getGoals() > second.getGoals())
         return false;
     
-    // if they scored the same number of goals we compare by assists
-    if (this->getAssists() < second.getAssists())
-        return true;
-    
-    if (this->getAssists() > second.getAssists())
-        return false;
         
     // if they scored the same number of goals and the same numbers of assists we compare by minutes played
     // if a player scored same goals but played less minutes it will be considered better than the others)

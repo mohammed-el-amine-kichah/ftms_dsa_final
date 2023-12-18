@@ -14,7 +14,6 @@ public:
     int getNumber() const { return number; }
     int getGoals() const { return goals; }
     int getAge() const { return age; }
-    int getAssists() const { return assists; }
     int getNumRedCards() const { return numRedCards; }
     int getNumYellowCards() const { return numYellowCards; }
     bool getIsPunished() const { return isPunished; }
@@ -42,7 +41,6 @@ private:
     int age;
     int number;
     int goals;
-    int assists;
     int numRedCards;
     int numYellowCards;
     double distance; 
