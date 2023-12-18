@@ -24,9 +24,9 @@ private:
     vector<Player*> awayWeightedPlayers;
 public:
 
-    Game() : homeTeam(""), awayTeam(""), homeTeamGoals(0), awayTeamGoals(0), duration(0) {}
+    Game() : homeTeam(NULL), awayTeam(NULL), homeTeamGoals(0), awayTeamGoals(0), duration(0) {}
 
-     Game(const Team& home, const Team& away, int homeGoals, int awayGoals, const Date matchDate, int gameDuration) 
+     Game(Team& home,Team& away, int homeGoals, int awayGoals, const Date matchDate, int gameDuration) 
     : homeTeam(home), awayTeam(away), homeTeamGoals(homeGoals), awayTeamGoals(awayGoals), match(matchDate), duration(gameDuration) {}
     ~Game() {}
 
@@ -57,11 +57,15 @@ public:
 
     //Prints score of game to terminal.
     void getScore();
+    string getHomeTeam() const { return homeTeam.getName(); }
+    string getAwayTeam() const { return awayTeam.getName(); }
     void printActivePlayers(const vector<Player*> &players) const;
     vector<Player*> getPlayersScoredGame() const {return PlayersScoredGame;};
-    vector<Game> readGamesFromFiles();
-    void printGameInfo();
+    //vector<Game> readGamesFromFiles();
+    void printGameInfo() const;
     Date getday() const {return match;}
+    int gethomeGoal() const {return homeTeamGoals;}
+    int getawayGoal() const {return awayTeamGoals;}
 };
 
 #endif

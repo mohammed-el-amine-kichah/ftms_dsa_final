@@ -20,15 +20,16 @@ private:
     int totalDraws;           // Total games drawn.
     int totalLosses;          // Total games lost.
     int totalGamesPlayed;     // Total games played;
+    vector<int> points;
+    vector<int> goalsFor;
+    vector<int> goalsAgainst;
 
 public:
 
     ~Team() {}
-
-
     Team( string name1);
 
-    string getName() { return name; }
+    string getName() const { return name; }
     vector<Player> getPlayers() { return players; }
     int getTotalGoalsfor() { return totalGoalsFor; }
     int getTotalGoalsAgainst() { return totalGoalsAgainst; }
@@ -38,6 +39,16 @@ public:
     int getTotalLosses() { return totalLosses; }
     int getTotalDraws() { return totalDraws; }
     int getTotalGamesPlayed() { return totalGamesPlayed; }
+    void addGoals(int g){totalGoalsFor += g;}
+    void addGoalsAgainst(int g){totalGoalsAgainst += g;}
+    void addPoints(int p){totalPoints += p;}
+    void addWins(){totalWins ++;}
+    void addLosses(){totalLosses ++;}
+    void addDraws(){totalDraws ++;}
+    void addGamesPlayed(){totalGamesPlayed ++;}
+    void updatePoints(){points.push_back(totalPoints);};
+    void updateGoalsFor(){goalsFor.push_back(totalGoalsFor);};
+    void updateGoalsAgainst(){goalsAgainst.push_back(totalGoalsAgainst);};
 
     bool operator<(const Team& team) const ;
 

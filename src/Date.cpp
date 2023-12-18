@@ -206,4 +206,111 @@ Date::WeekDay Date::getDayOfWeek() const {
     int a = (14 - month) / 12;
     int y = year - a;
     int m = month + 12 * a - 2;
-	}
+
+    int R = day + y + y / 4 - y / 100 + y / 400 + (31 * m) / 12;
+
+    switch (R % 7) {
+     case 0:
+      return WeekDay::Sunday;
+
+     case 1:
+      return WeekDay::Monday;
+
+     case 2:
+      return WeekDay::Tuesday;
+
+     case 3:
+      return WeekDay::Wednesday;
+
+     case 4:
+      return WeekDay::Thursday;
+
+     case 5:
+      return WeekDay::Friday;
+
+     case 6:
+      return WeekDay::Saturday;
+
+     default:
+      throw "How? o_O";
+    }
+}
+
+int Date::getDayOfYear() const {
+ return daysFromThisYear(day, month, year);
+}
+
+int Date::getDaysInMonth() const {
+ return daysInMonth(month, year);
+}
+
+bool Date::isYearLeap() const {
+ return isYearLeap(year);
+}
+
+long Date::toDays() const {
+ long days = day;
+
+    for (int y = 0; y < year; y++)
+        days += daysInYear(y);
+    
+    for (int m = 1; m < month; m++)
+        days += daysInMonth(m, year);
+
+    return days;
+}
+
+string Date::toStringWeekDay() const {
+ switch (getDayOfWeek()) {
+  case WeekDay::Monday:
+   return "Monday";
+
+  case WeekDay::Tuesday:
+   return "Tuesday";
+
+  case WeekDay::Wednesday:
+   return "Wednesday";
+
+  case WeekDay::Thursday:
+   return "Thursday";
+
+  case WeekDay::Friday:
+   return "Friday";
+
+  case WeekDay::Saturday:
+   return "Saturday";
+
+  case WeekDay::Sunday:
+   return "Sunday";
+
+  default:
+   throw "Invalid dayOfWeek()";
+ }
+}
+
+string Date::toString() const {
+ return to_string(day) + "." + (month < 10 ? "0" : "") + to_string(month) + "." + to_string(year);
+}
+
+void Date::fromString(const std::string& dateString) {
+    std::istringstream dateStream(dateString);
+    char dash;
+
+    dateStream >> year >> dash >> month >> dash >> day;
+
+    validate(); // Ensure the date is valid after parsing
+}
+
+
+ostream& operator<<(ostream &os, const Date &date) {
+ return os << date.day << "." << (date.month < 10 ? "0" : "") << date.month << "." << date.year;
+}
+
+istream& operator>>(istream &is, Date &date) {
+ char c;
+ is >> date.day >> c >> date.month >> c >> date.year;
+
+ date.validate();
+
+ return is;
+}
