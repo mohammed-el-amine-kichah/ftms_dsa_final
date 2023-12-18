@@ -256,9 +256,9 @@ class BinarySearchTree
     {
         if( t != nullptr )
         {
-            printTree( t->left, out );
-            out << t->element << endl;
             printTree( t->right, out );
+            out << t->element << endl;
+            printTree( t->left, out );
         }
     }
 
