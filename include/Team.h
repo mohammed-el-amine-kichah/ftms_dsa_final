@@ -39,6 +39,11 @@ public:
     int getTotalLosses() { return totalLosses; }
     int getTotalDraws() { return totalDraws; }
     int getTotalGamesPlayed() { return totalGamesPlayed; }
+    
+    int getPoints(int i) { return points[i]; }
+    int getGoalsFor(int i) { return goalsFor[i]; }
+    int getGoalsAgainst(int i) { return goalsAgainst[i]; }
+
     void addGoals(int g){totalGoalsFor += g;}
     void addGoalsAgainst(int g){totalGoalsAgainst += g;}
     void addPoints(int p){totalPoints += p;}

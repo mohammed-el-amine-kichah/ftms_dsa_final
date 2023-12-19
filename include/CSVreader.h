@@ -7,6 +7,8 @@
 #include "Player.h"
 #include "Game.h"
 #include "Date.h"
+#include "Season.h"
+#include <vector>
 using namespace std;
 
 vector<Team> readTeamsFromCSV(const string& filename) {
@@ -31,6 +33,7 @@ vector<Team> readTeamsFromCSV(const string& filename) {
     inputFile.close();
     return teams;
 }
+
 
 vector<Player> readCSVFiles() {
     vector<Player> players;
@@ -69,7 +72,7 @@ vector<Player> readCSVFiles() {
                 // Convert the strings to the appropriate data types if needed
                 int number = stoi(numberStr);
                 int goals = stoi(goalsStr);
-                int onPitch = stoi(onPitchStr);
+                bool onPitch = stoi(onPitchStr);
                 int yellow = stoi(yellowStr);
                 int red = stoi(redStr);
                 int dist = stoi(distStr);
@@ -80,29 +83,37 @@ vector<Player> readCSVFiles() {
                 for (auto& player : players) {
                     if (player.getTeam() == teamName && player.getName() == playerName) {
                         playerExists = true;
-                        player.numberOfGoals.push_back(goals);
-                        player.setGoals(player.getGoals() + goals);
-                        player.isOnPitch.push_back(onPitch);
-                        player.isYellow.push_back(yellow);
-                        player.isRed.push_back(red);
-                        player.distancea.push_back(dist);
-                        player.startTimea.push_back(start);
-                        player.endTime.push_back(end);
-                        player.timePlayeda.push_back(played);
+                        player.addGoals(goals);
+                        player.updateGoals();
+                        player.updateIsOnPitch(onPitch);
+                        player.addDistance(dist);
+                        player.updateDistance();
+                        player.updateTimePlayed(played);
+                        player.addRedCards(red);
+                        player.addYellowCards(yellow);
+                        player.updateIsRed();
+                        player.updateIsYellow();
+                        player.updateGamesStarted(start);
+                        player.updateGamesEnded(end);
+                        
                         break;
                     }
                 }
 
                 if (!playerExists) {
                     Player newPlayer(teamName, number, playerName, 0, position);
-                    newPlayer.numberOfGoals.push_back(goals);
-                    newPlayer.isOnPitch.push_back(onPitch);
-                    newPlayer.isYellow.push_back(yellow);
-                    newPlayer.isRed.push_back(red);
-                    newPlayer.distancea.push_back(dist);
-                    newPlayer.startTimea.push_back(start);
-                    newPlayer.endTime.push_back(end);
-                    newPlayer.timePlayeda.push_back(played);
+                    newPlayer.addGoals(goals);
+                    newPlayer.updateGoals();
+                    newPlayer.updateIsOnPitch(onPitch);
+                    newPlayer.addDistance(dist);
+                    newPlayer.updateDistance();
+                    newPlayer.updateTimePlayed(played);
+                    newPlayer.addRedCards(red);
+                    newPlayer.addYellowCards(yellow);
+                    newPlayer.updateIsRed();
+                    newPlayer.updateIsYellow();
+                    newPlayer.updateGamesStarted(start);
+                    newPlayer.updateGamesEnded(end);
 
                     players.push_back(newPlayer);
                 }
@@ -116,8 +127,10 @@ vector<Player> readCSVFiles() {
 
     return players;
 }
-vector<Game>readGamesFromFiles() {
+vector<Game> readGamesFromFiles(vector<Team> &teams) {
     vector<Game> allGames;
+    int HomePoints = 0;
+    int AwayPoints = 0;
 
     // Iterate over the 38 files
     for (int fileNumber = 1; fileNumber <= 38; ++fileNumber) {
@@ -164,19 +177,80 @@ vector<Game>readGamesFromFiles() {
                 getline(ss, token, ',');
                 int awayTeamGoals = stoi(token);
 
+                // Update the points
+                if (homeTeamGoals > awayTeamGoals)
+                {
+                    HomePoints = 3;
+                    AwayPoints = 0;
+                }
+                else if (homeTeamGoals < awayTeamGoals)
+                {
+                    HomePoints = 0;
+                    AwayPoints = 3;
+                }
+                else
+                {
+                    HomePoints = 1;
+                    AwayPoints = 1;
+                }
+                
 
                 // Update the team stats
-                homeTeam.addGoals(homeTeamGoals);
-                homeTeam.addGoalsAgainst(awayTeamGoals);
-                awayTeam.addGoals(awayTeamGoals);
-                awayTeam.addGoalsAgainst(homeTeamGoals);
-                homeTeam.addGamesPlayed();
-                awayTeam.addGamesPlayed();
-                homeTeam.updateGoalsFor();
-                homeTeam.updateGoalsAgainst();
-                awayTeam.updateGoalsFor();
-                awayTeam.updateGoalsAgainst();
+                bool TeamExists = false;
+                for (auto& team : teams) {
+                    if (team.getName() == homeTeam.getName()) {
+                        TeamExists = true;
+                        team.addGoals(homeTeamGoals);
+                        team.addGoalsAgainst(awayTeamGoals);
+                        team.addGamesPlayed();
+                        team.updateGoalsFor();
+                        team.updateGoalsAgainst();
+                        team.addPoints(HomePoints);
+                        team.updatePoints();
+                        break;
+                    }
+                }
+                if (!TeamExists)
+                {
+                    Team newTeam(homeTeam.getName());
+                    newTeam.addGoals(homeTeamGoals);
+                    newTeam.addGoalsAgainst(awayTeamGoals);
+                    newTeam.addGamesPlayed();
+                    newTeam.updateGoalsFor();
+                    newTeam.updateGoalsAgainst();
+                    newTeam.addPoints(HomePoints);
+                    newTeam.updatePoints();
+                    teams.push_back(newTeam);
+                }
 
+                //Away Team
+                TeamExists = false;
+                for(auto& team : teams){
+                    if(team.getName() == awayTeam.getName()){
+                        TeamExists = true;
+                        team.addGoals(awayTeamGoals);
+                        team.addGoalsAgainst(homeTeamGoals);
+                        team.addGamesPlayed();
+                        team.updateGoalsFor();
+                        team.updateGoalsAgainst();
+                        team.addPoints(AwayPoints);
+                        team.updatePoints();
+                        break;
+                    }
+                }
+                if(!TeamExists){
+                    Team newTeam(awayTeam.getName());
+                    newTeam.addGoals(awayTeamGoals);
+                    newTeam.addGoalsAgainst(homeTeamGoals);
+                    newTeam.addGamesPlayed();
+                    newTeam.updateGoalsFor();
+                    newTeam.updateGoalsAgainst();
+                    newTeam.addPoints(AwayPoints);
+                    newTeam.updatePoints();
+                    teams.push_back(newTeam);
+                }
+                
+                // Update the team stats
                 getline(ss, token);
                 int duration = stoi(token);
 

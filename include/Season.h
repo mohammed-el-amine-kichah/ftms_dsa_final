@@ -20,7 +20,7 @@ public:
     Season(){
         teams = readTeamsFromCSV("../data/teams.csv");
         players = readCSVFiles();
-        games = readGamesFromFiles();
+        games = readGamesFromFiles(this->teams);
     };
     vector<Team> getTeams() { return teams; }
     vector<Game> getGames() { return games; }

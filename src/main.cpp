@@ -23,7 +23,14 @@ int main(){
     
     // s.printTeams();
     // s.printPlayers();
-    s.printGames();
+    //s.printGames();
+
+    vector<Team> teams = s.getTeams();
+    for(auto team : teams){
+        cout<<team.getName()<<endl;
+        cout << team.getTotalPoints()<<endl;
+        cout << team.getPoints(36) << endl;
+    }
 
     
     //system("python3  ../draw/draw.py ");

@@ -14,25 +14,39 @@ public:
     int getNumber() const { return number; }
     int getGoals() const { return goals; }
     int getAge() const { return age; }
+    int getTimePlayed() const { return timePlayed; }
     int getNumRedCards() const { return numRedCards; }
     int getNumYellowCards() const { return numYellowCards; }
-    bool getIsPunished() const { return isPunished; }
-    bool getIsPlaying() const { return isPlaying; }
     double getdistance() const { return distance; }
-    int getStartTime() const { return startTime; }
-    int getReplacedTime() const { return replacedTime; }
-    int getTimePlayed() const { return timePlayed; }
     string getTeam() const { return team; }
     void setGoals(int goalss) { this->goals = goalss; }
     bool operator<(const Player& second) const;
-    vector<int> numberOfGoals;
-    vector<int> isOnPitch;
-    vector<int> isYellow;
-    vector<int> isRed;
-    vector<int> distancea;
-    vector<int> startTimea;
-    vector<int> endTime;
-    vector<int> timePlayeda;
+    void addGoals(int g){goals += g;}
+    void addRedCards(int red){numRedCards += red;}
+    void addYellowCards(int yellow){numYellowCards += yellow;}
+    void addDistance(double d){distance += d;}
+    void updateGamesStarted(int gameStart){startTimea.push_back(gameStart);}
+    void updateGamesEnded(int gameEnd){endTime.push_back(gameEnd);}
+
+    void updateTimePlayed(int timePlayedaa){
+        timePlayeda.push_back(timePlayedaa);
+        timePlayed += timePlayedaa;}
+
+    void updateGoals(){numberOfGoals.push_back(goals);};
+    void updateIsOnPitch(bool isPlaying){isOnPitch.push_back(isPlaying);};
+    void updateIsYellow(){isYellow.push_back(numYellowCards);};
+    void updateIsRed(){isRed.push_back(numRedCards);};
+    void updateDistance(){distancea.push_back(distance);};
+
+    int getGoalsI(int i) { return numberOfGoals[i]; }
+    int getIsOnPitchI(int i) { return isOnPitch[i]; }
+    int getIsYellowI(int i) { return isYellow[i]; }
+    int getIsRedI(int i) { return isRed[i]; }
+    int getDistanceI(int i) { return distancea[i]; }
+    int getStartTimeI(int i) { return startTimea[i]; }
+    int getEndTimeI(int i) { return endTime[i]; }
+    int getTimePlayedI(int i) { return timePlayeda[i]; }
+
 private:
     string name;
     string team;
@@ -43,15 +57,18 @@ private:
     int goals;
     int numRedCards;
     int numYellowCards;
-    double distance; 
-    bool isPunished; // true when he has a red card
-    bool isPlaying;  // true when he is on the pitch
-    int startTime;
-    int replacedTime;
-    int timePlayed; // in minutes
-    int gamesStarted;
-    int gamesPlayed;
+    double distance;
+    int timePlayed;
 
+
+    vector<int> numberOfGoals;
+    vector<int> isOnPitch;
+    vector<int> isYellow;
+    vector<int> isRed;
+    vector<int> distancea;
+    vector<int> startTimea;
+    vector<int> endTime;
+    vector<int> timePlayeda;
 };
 
 #endif

@@ -6,8 +6,6 @@ Player::Player(string T,int n, string N, int a,string p):team(T),number(n) ,name
     numRedCards = 0;
     numYellowCards = 0;
     distance = 0;
-    isPunished = false;
-    isPlaying = false;
 }
 bool Player::operator < (const Player &second) const {
     // we compare by goals
