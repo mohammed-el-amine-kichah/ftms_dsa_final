@@ -32,3 +32,10 @@ bool Player::operator < (const Player &second) const {
     return true;
     
 }
+ostream& operator<<(ostream& os, const Player& player) {
+    os << setw(20) << left << player.getTeam() 
+    << setw(40) << left << player.getName() 
+    << setw(30) << left << player.getGoals() ;
+    
+    return os;
+}

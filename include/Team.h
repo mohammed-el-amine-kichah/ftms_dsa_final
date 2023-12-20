@@ -54,8 +54,8 @@ public:
     int getTotalPoints() { return totalPoints; }
     int getTotalGoalDifference() { return totalGoalDifference; }
 
-    int getGoalDifference(int i) { return goalDifference[i]; }
-    int getWins(int i) { return Wins[i]; };
+    int getGoalDifferenceI(int i) { return goalDifference[i]; }
+    int getWinsI(int i) { return Wins[i]; };
 
     //for comparision
     int getCpoints() const { return Cpoints; }
@@ -70,26 +70,27 @@ public:
     int getTotalLosses() { return totalLosses; }
     int getTotalDraws() { return totalDraws; }
     int getTotalGamesPlayed() { return totalGamesPlayed; }
-    
-
     int getPoints(int i) { return points[i]; }
     int getGoalsFor(int i) { return goalsFor[i]; }
     int getGoalsAgainst(int i) { return goalsAgainst[i]; }
 
     void addGoals(int g){totalGoalsFor += g;}
     void addGoalsAgainst(int g){totalGoalsAgainst += g;}
+    void addGoalDifference(int g){totalGoalDifference += g;}
     void addPoints(int p){totalPoints += p;}
     void addWins(){totalWins ++;}
     void addLosses(){totalLosses ++;}
     void addDraws(){totalDraws ++;}
     void addGamesPlayed(){totalGamesPlayed ++;}
+
     void updatePoints(){points.push_back(totalPoints);};
     void updateGoalsFor(){goalsFor.push_back(totalGoalsFor);};
     void updateGoalsAgainst(){goalsAgainst.push_back(totalGoalsAgainst);};
-
     void updateGoalDiffrence(){goalDifference.push_back(totalGoalDifference);};
     void updateWins(){Wins.push_back(totalWins);};
     void updateMP(){MP.push_back(totalGamesPlayed);};
+    void updateDraws(){Draws.push_back(totalDraws);};
+    void updateLoses(){Loses.push_back(totalLosses);};
 
     bool operator<(const Team& team) const ;
 
@@ -137,12 +138,14 @@ public:
     void addPlayer(const Player& player);
     void printTeamPlayers();
     void InfoAt(int round=38);
-    friend ostream& operator<<(ostream& out, const Team& team);
 };
-std::ostream& operator<<(std::ostream& out, const Team& team) {
-    // Print the team's data here. For example:
-    out << "Team Name: " << team.name;
-    // Add more fields as necessary.
+ostream& operator<<(ostream& out, const Team& team) {
+    out << setw(20) << left << team.getName() 
+    << setw(16) << left << team.getCMP() 
+    << setw(16) << left << team.getCwins() 
+    << setw(16) << left << team.getCDraws() 
+    << setw(16) << left << team.getCLoses() 
+    << setw(16) << left << team.getCpoints() ;
     return out;
 }
 #endif

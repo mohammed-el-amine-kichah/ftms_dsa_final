@@ -105,8 +105,9 @@ bool Team::compareTo(int round, Team t )
     // If points are equal check if this -> team has higher goal difference.
     else
     {
-        if ( goalDifference[round] > t.getGoalDifference(round) ) return true;
+        if ( goalDifference[round] > t.getGoalDifferenceI(round) ) return true;
     }
+    return false;
 }
 
 void Team::toString()
@@ -145,7 +146,7 @@ bool Team::operator<(const Team& team) const {
    }
     return name < team.name;
 }
-void Team::InfoAt(int round) 
+void Team::InfoAt(int round)  // derafa khalil
 {
     Cpoints = points[round];
     CgoalDifference = goalDifference[round];
@@ -156,15 +157,3 @@ void Team::InfoAt(int round)
     CLoses = Loses[round];
 }
 
-ostream& operator<<(ostream& out, const Team& team) {
-    out << setw(16) << left << team.getName() 
-    << setw(5) << left << team.getCMP() 
-    << setw(5) << left << team.getCwins() 
-    << setw(5) << left << team.getCDraws() 
-    << setw(5) << left << team.getCLoses()
-    << setw(5) << left << team.getCpoints() <<endl;
-
-    // Add more information as needed
-
-    return out;
-}

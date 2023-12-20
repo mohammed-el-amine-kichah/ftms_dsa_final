@@ -20,4 +20,5 @@ plt.xticks(range(1, 39),rotation = 45)
 plt.yticks(range(0, 10))
 plt.legend()
 plt.savefig('../draw/plotOfScoringDistribution.png')
+plt.show()
 

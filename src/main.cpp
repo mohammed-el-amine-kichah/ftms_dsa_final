@@ -36,6 +36,36 @@ int main(){
         //s.showCurve("Sadio Mané");
         
     //s.DisplayBestScorersAVL();
-    s.DisplayBestScorersBST();
+    //s.DisplayBestScorersBST();
+    cout << "\n";
+    cout << "* ----------------------------------------------------- *\n";
+    cout << "* Welcome to the Football Touranment Management System! *\n";
+    cout << "* ----------------------------------------------------- *\n";
+    
+    int n = 1; 
+    while ( n != 0){
+    cout << "\n\n";
+    cout << "  please choose one of the following options:" << endl;
+    cout << "\n";
+    cout << " 2 display best scorers using BST " << endl;
+    cout << " 3 display best scorers using AVL " << endl;
+    cout << " 4 display best scorer in every team " << endl;
+    cout << " 5 draw the curve of a given player " << endl;
+    cout << " 6 display gameweek details " << endl;
+    cout << " 7 display the standing table  " << endl;
+    cout << " 0 exit " << endl;
+    cout << "\n\n";
+
+    cout << "Enter your choice: ";
+    cin >> n;
+    s.choice(n);
+
+}
+    system("clear");
+    cout << "\n";
+    cout << "* ----------------------------------------------------------- *\n";
+    cout << "* Thanks for using the Football Touranment Management System! *\n";
+    cout << "* ----------------------------------------------------------- *\n";
+    cout << "\n";
     return 0;
 }

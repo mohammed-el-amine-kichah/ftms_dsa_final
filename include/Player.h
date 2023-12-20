@@ -2,18 +2,14 @@
 #define PLAYER_H
 #include<iostream>
 #pragma once
+#include <iomanip>
 
 using namespace std;
 
 class Player
 {
 public:
-    friend std::ostream& operator<<(std::ostream& os, const Player& player) {
-    os << player.getTeam() << " " << player.getName() << " " << player.getGoals();
-    return os;
-}
-
-
+    friend std::ostream& operator<<(std::ostream& os, const Player& player);
 
     Player(string, int, string, int, string);
     string getName() const { return name; }
@@ -50,7 +46,7 @@ public:
     int getIsOnPitchI(int i) { return isOnPitch[i]; }
     int getIsYellowI(int i) { return isYellow[i]; }
     int getIsRedI(int i) { return isRed[i]; }
-    int getDistanceI(int i) { return distancea[i]; }
+    double getDistanceI(int i) { return distancea[i]; }
     int getStartTimeI(int i) { return startTimea[i]; }
     int getEndTimeI(int i) { return endTime[i]; }
     int getTimePlayedI(int i) { return timePlayeda[i]; }
@@ -73,7 +69,7 @@ private:
     vector<int> isOnPitch;
     vector<int> isYellow;
     vector<int> isRed;
-    vector<int> distancea;
+    vector<double> distancea;
     vector<int> startTimea;
     vector<int> endTime;
     vector<int> timePlayeda;

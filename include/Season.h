@@ -63,128 +63,17 @@ public:
     }
 
     ~Season(){};
-    
-    void printGW(int round , vector<Team> &teams);
+
+    void printGW(int round );
     void printgametable(BinarySearchTree<Team> &teams);
+    void DisplayScorersBST(int round);
+    void DisplayScorersAVL(int round);
+    void DisplayBestScorersBST();
+    void DisplayBestScorersAVL();
+    void showCurve(string name);
 
-    void DisplayBestScorersBST() {
-        auto start = chrono::high_resolution_clock::now();
-
-        BinarySearchTree<Player> bestScorers;
-        BinarySearchTree<Player> bestScorer;
-        for (auto team : teams)
-        {
-            for (auto player : team.getPlayers())
-            {
-                if (player.getGoals() > 0) 
-                    bestScorer.insert(player); 
-            }
-            Player best = bestScorer.findMax();
-            bestScorers.insert(best);
-            bestScorer.makeEmpty();
-        }
-
-        cout << "TEAM    Name           GOALS" << endl;
-        bestScorers.printTree();
-
-        cout << "the best scorer among all teams is: " << bestScorers.findMax() << endl;
-        auto end = chrono::high_resolution_clock::now();
-
-        auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-        cout << "BST display time: " << duration.count() << " microseconds" << endl;
-    }
-    void DisplayBestScorersAVL() {
-        auto start = chrono::high_resolution_clock::now();
-
-        AvlTree<Player> bestScorers;
-        AvlTree<Player> bestScorer;
-        for (auto& team : teams)
-        {   
-           
-            
-            vector<Player> players = team.getPlayers();
-           
-           
-             for (auto player : players)
-            { 
-                 if (player.getGoals() > 0) {
-                  
-                     bestScorer.insert(player);} 
-            }
-            Player best = bestScorer.findMax();
-            //cout << best << endl;
-            bestScorers.insert(best);
-        
-        bestScorer.makeEmpty();
-        }
-        cout << "TEAM    Name           GOALS" << endl;
-     bestScorers.printTree();
-
-        cout << "the best scorer among all teams is: " << bestScorers.findMax() << endl;
-        auto end = chrono::high_resolution_clock::now();
-
-        auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-        cout << "AVL display time: " << duration.count() << " microseconds" << endl;
-    }
-
-    void showCurve(string name){
-        ofstream myfile;
-        myfile.open ("../draw/goalDistribution.csv");
-        myfile <<name<<"\n";
-
-        myfile <<"GameweekNumber,Goals\n";
-        
-        for (auto player : players) {
-            if (player.getName() == name)
-            for (int i = 0; i < player.getNumberOfGoals().size(); i++)
-            {   if (i == 0)
-                myfile << i+1 << "," << player.getNumberOfGoals()[i] << "\n";
-                else 
-                myfile << i+1 << "," << player.getNumberOfGoals()[i] - player.getNumberOfGoals()[i-1] << "\n";
-            }
-        }
-        myfile.close();
-        system("python3  ../draw/draw.py ");
-
-    }
-    
-    void DisplayScorersBST(int gw = 37){
-        auto start = chrono::high_resolution_clock::now();
-        BinarySearchTree<Player> bstScorers;
-       
-        for (auto player : players)
-        {   
-            player.setGoals(player.getNumberOfGoals()[gw]);
-            player.setTimePlayed(player.getTimePlayedI(gw));
-            if (player.getGoals() > 0) 
-                bstScorers.insert(player); 
-                
-        }
-        bstScorers.printTree();
-        auto end = chrono::high_resolution_clock::now();
-
-        auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-        cout << "BST display time: " << duration.count() << " microseconds" << endl;
-    }
-    void DisplayScorersAVL(int gw = 37){
-        auto start = chrono::high_resolution_clock::now();
-
-        AvlTree<Player> avlScorers;
-       
-        for (auto player : players)
-        {   
-            player.setGoals(player.getNumberOfGoals()[gw]);
-            player.setTimePlayed(player.getTimePlayedI(gw));
-            if (player.getGoals() > 0) 
-                avlScorers.insert(player); 
-                
-        }
-        avlScorers.printTree();
-        auto end = chrono::high_resolution_clock::now();
-
-        auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
-        cout << "AVL display time: " << duration.count() << " microseconds" << endl;
-    }
+    void choice(int n);
+    void printDistance(string ,int );
     vector<Date> getDates() {return dates;}
 
 };
