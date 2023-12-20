@@ -25,7 +25,7 @@ private:
     vector<int> goalsAgainst;
 
 public:
-
+    friend std::ostream& operator<<(std::ostream& out, const Team& team);
     ~Team() {}
     Team( string name1);
 
@@ -40,6 +40,7 @@ public:
     int getTotalDraws() { return totalDraws; }
     int getTotalGamesPlayed() { return totalGamesPlayed; }
     
+
     int getPoints(int i) { return points[i]; }
     int getGoalsFor(int i) { return goalsFor[i]; }
     int getGoalsAgainst(int i) { return goalsAgainst[i]; }
@@ -100,5 +101,10 @@ public:
     void addPlayer(const Player& player);
     void printTeamPlayers();
 };
-
+std::ostream& operator<<(std::ostream& out, const Team& team) {
+    // Print the team's data here. For example:
+    out << "Team Name: " << team.name;
+    // Add more fields as necessary.
+    return out;
+}
 #endif
