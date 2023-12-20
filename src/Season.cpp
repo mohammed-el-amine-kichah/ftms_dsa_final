@@ -149,9 +149,8 @@ void Season::printGW(int round)
     {
         teams.printTree();
     }
-    void Season::choice(int n) {
+    void Season::choice(int n,int gw) {
         string name;
-        int gwnumber;
         BinarySearchTree<Team> myteams;
 
 
@@ -168,11 +167,11 @@ void Season::printGW(int round)
                 break;
             case 3:
                 system("clear");
-                DisplayScorersBST();
+                DisplayScorersBST(gw);
                 break;
             case 4:
                 system("clear");
-                DisplayScorersAVL();
+                DisplayScorersAVL(gw);
                 break;
             case 5: 
                 cout << "Enter the name of the player: ";
@@ -180,18 +179,18 @@ void Season::printGW(int round)
                 showCurve(name);
                 break;
             case 6:
-                cout << "Enter the gameweek number: ";
-                cin >> gwnumber;
+                
                 system("clear");
-                printGW(gwnumber);
+                printGW(gw);
                 
 
                 break;
             case 7:
                 for (auto team : teams)
                 {
+                    team.InfoAt(gw); // derafa 3shan el gameweek bta3 el standing table
                     myteams.insert(team);
-                    cout << team;
+                  
                 }
                 system("clear");
                 printgametable(myteams);

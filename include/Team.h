@@ -137,7 +137,7 @@ public:
     //void populateTeamPlayers(string teamName);
     void addPlayer(const Player& player);
     void printTeamPlayers();
-    void InfoAt(int round=38);
+    void InfoAt(int );
 };
 ostream& operator<<(ostream& out, const Team& team) {
     out << setw(20) << left << team.getName() 

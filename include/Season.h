@@ -72,7 +72,7 @@ public:
     void DisplayBestScorersAVL();
     void showCurve(string name);
 
-    void choice(int n);
+    void choice(int n, int gw);
     void printDistance(string ,int );
     vector<Date> getDates() {return dates;}
 
