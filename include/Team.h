@@ -15,14 +15,32 @@ private:
     int totalGoalsFor;        // Total goals scored during season.
     int totalGoalsAgainst;    // Total goals scored against during season.
     int totalPoints;          // Total points for current season.
-    int goalDifference;       // Goals for - goals against
+    int totalGoalDifference;       // Goals for - goals against
     int totalWins;            // Total games won.
     int totalDraws;           // Total games drawn.
     int totalLosses;          // Total games lost.
-    int totalGamesPlayed;     // Total games played;
+    int totalGamesPlayed;  
+    
+    //for comparition
+    int Cpoints;
+    int CgoalDifference;
+    int CgoalsFor;
+    int Cwins;
+    int CMP;
+    int CDraws;
+    int CLoses;
+
+
+       // Total games played;
     vector<int> points;
     vector<int> goalsFor;
     vector<int> goalsAgainst;
+    
+    vector<int> goalDifference;
+    vector<int> Wins;
+    vector<int> MP;
+    vector<int> Draws;
+    vector<int> Loses;
 
 public:
     friend std::ostream& operator<<(std::ostream& out, const Team& team);
@@ -34,7 +52,20 @@ public:
     int getTotalGoalsfor() { return totalGoalsFor; }
     int getTotalGoalsAgainst() { return totalGoalsAgainst; }
     int getTotalPoints() { return totalPoints; }
-    int getGoalDifference() { return goalDifference; }
+    int getTotalGoalDifference() { return totalGoalDifference; }
+
+    int getGoalDifference(int i) { return goalDifference[i]; }
+    int getWins(int i) { return Wins[i]; };
+
+    //for comparision
+    int getCpoints() const { return Cpoints; }
+    int getCgoalDifference() const { return CgoalDifference; }
+    int getCgoalsFor() const { return CgoalsFor; }
+    int getCwins() const { return Cwins; }
+    int getCMP() const { return CMP; }
+    int getCDraws() const { return CDraws; }
+    int getCLoses() const { return CLoses; }
+
     int getTotalWins() { return totalWins; }
     int getTotalLosses() { return totalLosses; }
     int getTotalDraws() { return totalDraws; }
@@ -55,6 +86,10 @@ public:
     void updatePoints(){points.push_back(totalPoints);};
     void updateGoalsFor(){goalsFor.push_back(totalGoalsFor);};
     void updateGoalsAgainst(){goalsAgainst.push_back(totalGoalsAgainst);};
+
+    void updateGoalDiffrence(){goalDifference.push_back(totalGoalDifference);};
+    void updateWins(){Wins.push_back(totalWins);};
+    void updateMP(){MP.push_back(totalGamesPlayed);};
 
     bool operator<(const Team& team) const ;
 
@@ -89,7 +124,8 @@ public:
 
         Used when sorted league table.
     */
-    bool compareTo( Team t );
+    bool compareTo( int round, Team t );
+    bool compareTo(  Team t ) ;
 
     /**
         Prints team name and statistics.
@@ -100,6 +136,8 @@ public:
     //void populateTeamPlayers(string teamName);
     void addPlayer(const Player& player);
     void printTeamPlayers();
+    void InfoAt(int round=38);
+    friend ostream& operator<<(ostream& out, const Team& team);
 };
 std::ostream& operator<<(std::ostream& out, const Team& team) {
     // Print the team's data here. For example:

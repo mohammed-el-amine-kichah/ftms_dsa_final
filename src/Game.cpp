@@ -14,3 +14,11 @@ void Game::printGameInfo() const {
               << ", Date: " << match << ", Duration: " << duration << " minutes" << endl;
     // Add more details as needed
 }
+void Game::printTableat(int round, vector<Team> &teams)
+{
+    BinarySearchTree <Team> TeamBST; 
+    for(const Team team:teams)
+    {
+        TeamBST.insert(team);
+    }
+}

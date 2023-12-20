@@ -66,6 +66,7 @@ public:
     Date getday() const {return match;}
     int gethomeGoal() const {return homeTeamGoals;}
     int getawayGoal() const {return awayTeamGoals;}
+    void printTableat(int round, vector<Team> &teams);
 };
 
 #endif

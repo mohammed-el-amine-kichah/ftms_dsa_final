@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <string>
+#include <sstream>
 
 Team::Team( std::string name1)
 {
@@ -12,23 +14,35 @@ Team::Team( std::string name1)
     totalGoalsFor = 0;
     totalGoalsAgainst = 0;
     totalPoints = 0;
-    goalDifference = 0;
+    totalGoalDifference = 0;
     totalWins = 0;
     totalDraws = 0;
     totalLosses = 0;
     totalGamesPlayed = 0;
+    Cpoints = 0;
+    CgoalDifference = 0;
+    CgoalsFor = 0;
+    Cwins = 0;
+    points = {0};
+    goalsFor = {0};
+    goalsAgainst = {0};
+    goalDifference = {0};
+    Wins = {0};
+    MP = {0};
+    Draws = {0};
+    Loses = {0};
 }
 
 void Team::goalScored( int amount )
 {
     totalGoalsFor += amount;
-    goalDifference = totalGoalsFor - totalGoalsAgainst;
+    totalGoalDifference = totalGoalsFor - totalGoalsAgainst;
 }
 
 void Team::goalAgainstScored( int amount )
 {
     totalGoalsAgainst += amount;
-    goalDifference = totalGoalsFor - totalGoalsAgainst;
+    totalGoalDifference = totalGoalsFor - totalGoalsAgainst;
 }
 
 void Team::logWin()
@@ -66,7 +80,7 @@ bool Team::compareTo( Team t )
     // If points are equal check if this -> team has higher goal difference.
     else
     {
-        if ( goalDifference > t.getGoalDifference() )
+        if ( totalGoalDifference > t.getTotalGoalDifference())
         {
             return true;
         }
@@ -74,6 +88,24 @@ bool Team::compareTo( Team t )
         {
             return false;
         }
+    }
+}
+
+bool Team::compareTo(int round, Team t )
+{
+    // Check if this -> team has more points.
+    if ( points.at(round) > t.getPoints(round) )
+    {
+        return true;
+    }
+    else if ( points.at(round) < t.getPoints(round) )
+    {
+        return false;
+    }
+    // If points are equal check if this -> team has higher goal difference.
+    else
+    {
+        if ( goalDifference[round] > t.getGoalDifference(round) ) return true;
     }
 }
 
@@ -92,24 +124,47 @@ void Team::printTeamPlayers() {
     }
 }
 bool Team::operator<(const Team& team) const { 
-        if (totalPoints != team.totalPoints)
+        if (Cpoints != team.getCpoints())
         {
-            return totalPoints < team.totalPoints; 
+            return Cpoints < team.getCpoints(); 
         }
 
-        else if (goalDifference != team.goalDifference)
+        else if (CgoalDifference != team.getCgoalDifference())
         {
-            return goalDifference < team.goalDifference;
+            return CgoalDifference < team.getCgoalDifference();
         }
 
-        else if (totalGoalsFor != team.totalGoalsFor)
+        else if (CgoalsFor != team.getCgoalsFor())
         {
-            return totalGoalsFor < team.totalGoalsFor;
+            return CgoalsFor < team.getCgoalsFor();
         }
 
-        else if (totalWins != team.totalWins)
+        else if (Cwins != team.getCwins())
         {
-            return totalWins < team.totalWins;
+            return Cwins < team.getCwins();
    }
     return name < team.name;
+}
+void Team::InfoAt(int round) 
+{
+    Cpoints = points[round];
+    CgoalDifference = goalDifference[round];
+    CgoalsFor = goalsFor[round];
+    Cwins = Wins[round];
+    CMP = MP[round];
+    CDraws = Draws[round];
+    CLoses = Loses[round];
+}
+
+ostream& operator<<(ostream& out, const Team& team) {
+    out << setw(16) << left << team.getName() 
+    << setw(5) << left << team.getCMP() 
+    << setw(5) << left << team.getCwins() 
+    << setw(5) << left << team.getCDraws() 
+    << setw(5) << left << team.getCLoses()
+    << setw(5) << left << team.getCpoints() <<endl;
+
+    // Add more information as needed
+
+    return out;
 }

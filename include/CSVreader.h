@@ -191,21 +191,27 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                 getline(ss, token, ',');
                 int awayTeamGoals = stoi(token);
 
+                bool homeWin = false;
+                bool homeLose = false;
+                bool draw = false;
                 // Update the points
                 if (homeTeamGoals > awayTeamGoals)
                 {
                     HomePoints = 3;
                     AwayPoints = 0;
+                    homeWin = true;
                 }
                 else if (homeTeamGoals < awayTeamGoals)
                 {
                     HomePoints = 0;
                     AwayPoints = 3;
+                    homeWin = false;
                 }
                 else
                 {
                     HomePoints = 1;
                     AwayPoints = 1;
+                    draw = true;
                 }
                 
 
@@ -220,6 +226,18 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                         team.updateGoalsFor();
                         team.updateGoalsAgainst();
                         team.addPoints(HomePoints);
+                        if (homeWin == true)
+                        {
+                            team.addWins();
+                            team.updateWins();
+                        }
+                        else if (homeLose == true)
+                        {
+                            team.addLosses();
+                            team.updateWins();
+                        }
+                        else {team.addDraws();
+                        team.updateWins();}
                         team.updatePoints();
                         break;
                     }
@@ -234,6 +252,18 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                     newTeam.updateGoalsAgainst();
                     newTeam.addPoints(HomePoints);
                     newTeam.updatePoints();
+                    if (homeWin == true)
+                        {
+                            newTeam.addWins();
+                            newTeam.updateWins();
+                        }
+                        else if (homeLose == true)
+                        {
+                            newTeam.addLosses();
+                            newTeam.updateWins();
+                        }
+                        else {newTeam.addDraws();
+                        newTeam.updateWins();}
                     teams.push_back(newTeam);
                 }
 
@@ -249,6 +279,18 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                         team.updateGoalsAgainst();
                         team.addPoints(AwayPoints);
                         team.updatePoints();
+                        if (homeWin == true)
+                        {
+                            team.addLosses();
+                            team.updateWins();
+                        }
+                        else if (homeLose == true)
+                        {
+                            team.addWins();
+                            team.updateWins();
+                        }
+                        else {team.addDraws();
+                        team.updateWins();}
                         break;
                     }
                 }
@@ -261,6 +303,20 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                     newTeam.updateGoalsAgainst();
                     newTeam.addPoints(AwayPoints);
                     newTeam.updatePoints();
+                    if (homeWin == true)
+                        {
+                            newTeam.addLosses();
+                            newTeam.updateWins();
+                        }
+                        else if (homeLose == true)
+                        {
+                            newTeam.addWins();
+                            newTeam.updateWins();
+                        }
+                        else {
+                            newTeam.addDraws();
+                            newTeam.updateWins();
+                            }
                     teams.push_back(newTeam);
                 }
                 

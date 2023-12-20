@@ -63,6 +63,9 @@ public:
     }
 
     ~Season(){};
+    
+    void printGW(int round , vector<Team> &teams);
+    void printgametable(BinarySearchTree<Team> &teams);
 
     void DisplayBestScorersBST() {
         auto start = chrono::high_resolution_clock::now();
