@@ -1,4 +1,5 @@
 #include "../include/Team.h"
+#include "../include/Player.h"
 #include <iostream>
 #include <vector>
 #include <map>
@@ -6,6 +7,7 @@
 Team::Team( std::string name1)
 {
     name = name1;
+    
     
     totalGoalsFor = 0;
     totalGoalsAgainst = 0;

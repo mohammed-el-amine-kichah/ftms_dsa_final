@@ -127,7 +127,7 @@ vector<Player> readCSVFiles() {
 
     return players;
 }
-vector<Game> readGamesFromFiles(vector<Team> &teams) {
+vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
     vector<Game> allGames;
     int HomePoints = 0;
     int AwayPoints = 0;
@@ -164,6 +164,20 @@ vector<Game> readGamesFromFiles(vector<Team> &teams) {
                 string match = token;  // Assuming Date class has overloaded >> operator
                 Date matchdate;
                 matchdate.fromString(match);
+                bool DateExists = false;
+
+                for(auto& date:dates){
+                    if (date == matchdate)
+                    {
+                        DateExists = true;
+                        break;
+                    }
+                }
+
+                if (!DateExists)
+                {
+                    dates.push_back(matchdate);
+                }
 
                 getline(ss, token, ',');
                 Team homeTeam = Team(token);

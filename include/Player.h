@@ -8,6 +8,13 @@ using namespace std;
 class Player
 {
 public:
+    friend std::ostream& operator<<(std::ostream& os, const Player& player) {
+    os << player.getTeam() << " " << player.getName() << " " << player.getGoals();
+    return os;
+}
+
+
+
     Player(string, int, string, int, string);
     string getName() const { return name; }
     string getPosition() const { return position; }
@@ -20,6 +27,7 @@ public:
     double getdistance() const { return distance; }
     string getTeam() const { return team; }
     void setGoals(int goalss) { this->goals = goalss; }
+    void setTimePlayed(int timePlayedd) { this->timePlayed = timePlayedd; } 
     bool operator<(const Player& second) const;
     void addGoals(int g){goals += g;}
     void addRedCards(int red){numRedCards += red;}
@@ -38,7 +46,7 @@ public:
     void updateIsRed(){isRed.push_back(numRedCards);};
     void updateDistance(){distancea.push_back(distance);};
 
-    int getGoalsI(int i) { return numberOfGoals[i]; }
+    vector<int> getNumberOfGoals() { return numberOfGoals; }
     int getIsOnPitchI(int i) { return isOnPitch[i]; }
     int getIsYellowI(int i) { return isYellow[i]; }
     int getIsRedI(int i) { return isRed[i]; }

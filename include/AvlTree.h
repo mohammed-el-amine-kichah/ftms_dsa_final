@@ -219,12 +219,12 @@ class AvlTree
         else
         if( height( t->right ) - height( t->left ) > ALLOWED_IMBALANCE )
 			// Right right imbalance
-            if( height( t->right->right ) >= height( t->right->left ) )
+            if ( height( t->right->right ) >= height( t->right->left ) ){
                 rotateWithRightChild( t );
 			// Right left imbalance
-            else
+            } else 
                 doubleWithRightChild( t );
-        
+            
 		// Update the height
         t->height = max( height( t->left ), height( t->right ) ) + 1;
     }
@@ -297,9 +297,9 @@ class AvlTree
     {
         if( t != nullptr )
         {
-            printTree( t->left );
-            cout << t->element << endl;
             printTree( t->right );
+            cout << t->element << endl;
+            printTree( t->left );
         }
     }
 	

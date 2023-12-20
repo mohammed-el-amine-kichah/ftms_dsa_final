@@ -25,14 +25,17 @@ int main(){
     // s.printPlayers();
     //s.printGames();
 
-    vector<Team> teams = s.getTeams();
-    for(auto team : teams){
-        cout<<team.getName()<<endl;
-        cout << team.getTotalPoints()<<endl;
-        cout << team.getPoints(36) << endl;
-    }
-
-    
-    //system("python3  ../draw/draw.py ");
+    // vector<Team> teams = s.getTeams();
+    // for(auto team : teams){
+    //     cout<<team.getName()<<endl;
+    //     cout << team.getTotalPoints()<<endl;
+    //     cout << team.getPoints(36) << endl;
+    // }
+    //s.DisplayScorersBST(22);
+    //s.DisplayScorersAVL(24);
+        //s.showCurve("Sadio Mané");
+        
+    //s.DisplayBestScorersAVL();
+    s.DisplayBestScorersBST();
     return 0;
 }

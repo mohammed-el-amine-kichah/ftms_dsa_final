@@ -3,6 +3,10 @@
 #include <iostream>
 #include <string>
 #include <ctime>
+#include <vector>
+
+using namespace std;
+
 
 class Date {
  int day;
@@ -48,6 +52,8 @@ public:
 
  bool isYearLeap() const;
  long toDays() const;
+
+ int DateToGameWeek(const Date& date, const vector<Date>& dates);
 
  std::string toStringWeekDay() const;
  std::string toString() const;

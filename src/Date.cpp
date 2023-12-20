@@ -314,3 +314,15 @@ istream& operator>>(istream &is, Date &date) {
 
  return is;
 }
+int Date::DateToGameWeek(const Date& date, const vector<Date>& dates) {
+    for (int i = 0; i < dates.size(); i++) {
+        if (date < dates[i]) {
+            if (i == 0|| i >= 38)
+            {
+                return -1;
+            }
+            return i;
+        }
+    }
+    return -1;
+}
