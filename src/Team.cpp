@@ -6,11 +6,12 @@
 #include <string>
 #include <sstream>
 
-Team::Team( std::string name1)
+Team::Team( string name1,string coachName1,string PresidentName1)
 {
     name = name1;
-    
-    
+    coachName = coachName1;
+    PresidentName = PresidentName1;
+
     totalGoalsFor = 0;
     totalGoalsAgainst = 0;
     totalPoints = 0;
@@ -31,6 +32,7 @@ Team::Team( std::string name1)
     MP = {0};
     Draws = {0};
     Loses = {0};
+    players.clear();
 }
 
 void Team::goalScored( int amount )

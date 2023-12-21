@@ -24,7 +24,7 @@ private:
     vector<Player*> awayWeightedPlayers;
 public:
 
-    Game() : homeTeam(NULL), awayTeam(NULL), homeTeamGoals(0), awayTeamGoals(0), duration(0) {}
+    Game() : homeTeam(NULL,"",""), awayTeam(NULL,"",""), homeTeamGoals(0), awayTeamGoals(0), duration(0) {}
 
      Game(Team& home,Team& away, int homeGoals, int awayGoals, const Date matchDate, int gameDuration) 
     : homeTeam(home), awayTeam(away), homeTeamGoals(homeGoals), awayTeamGoals(awayGoals), match(matchDate), duration(gameDuration) {}

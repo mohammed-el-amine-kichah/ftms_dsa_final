@@ -22,17 +22,20 @@ vector<Team> readTeamsFromCSV(const string& filename) {
 
     while (getline(inputFile, line)) {
         stringstream inputString(line);
-        string name;
+        string name,coach,prisedent;
 
         getline(inputString, name, ',');
+        getline(inputString, coach, ',');
+        getline(inputString, prisedent, ',');
         
-        Team team(name);
+        Team team(name,coach,prisedent);
         teams.push_back(team);
     }
 
     inputFile.close();
     return teams;
 }
+
 
 
 vector<Player> readCSVFiles() {
@@ -79,6 +82,7 @@ vector<Player> readCSVFiles() {
                 int start = stoi(startStr);
                 int end = stoi(endStr);
                 int played = stoi(playedStr);
+
                 bool playerExists = false;
                 for (auto& player : players) {
                     if (player.getTeam() == teamName && player.getName() == playerName) {
@@ -117,7 +121,9 @@ vector<Player> readCSVFiles() {
 
                     players.push_back(newPlayer);
                 }
-            } else {
+            } 
+            
+            else {
                 cerr << "Error reading line in file" << to_string(i) << ".csv" << endl;
             }
         }

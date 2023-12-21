@@ -10,12 +10,14 @@ class Team
 private:
 
     string name;              // Team name.
+    string coachName;         // Team coach.
+    string PresidentName;     // Team president.
     vector<Player> players;   // Team players.
     
     int totalGoalsFor;        // Total goals scored during season.
     int totalGoalsAgainst;    // Total goals scored against during season.
     int totalPoints;          // Total points for current season.
-    int totalGoalDifference;       // Goals for - goals against
+    int totalGoalDifference;  // Goals for - goals against
     int totalWins;            // Total games won.
     int totalDraws;           // Total games drawn.
     int totalLosses;          // Total games lost.
@@ -45,14 +47,17 @@ private:
 public:
     friend std::ostream& operator<<(std::ostream& out, const Team& team);
     ~Team() {}
-    Team( string name1);
+    Team( string name1, string coachName1="", string PresidentName1="");
 
     string getName() const { return name; }
+    string getCoachName() const { return coachName; }
+    string getPresidentName() const { return PresidentName; }
     vector<Player> getPlayers() { return players; }
     int getTotalGoalsfor() { return totalGoalsFor; }
     int getTotalGoalsAgainst() { return totalGoalsAgainst; }
     int getTotalPoints() { return totalPoints; }
     int getTotalGoalDifference() { return totalGoalDifference; }
+
 
     int getGoalDifferenceI(int i) { return goalDifference[i]; }
     int getWinsI(int i) { return Wins[i]; };

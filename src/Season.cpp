@@ -50,6 +50,33 @@ void Season::printGW(int round)
         auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
         cout << "BST display time: " << duration.count() << " microseconds" << endl;
     }
+
+    void Season::DisplayBestScorersBST(string TeamName) {
+        auto start = chrono::high_resolution_clock::now();
+
+        BinarySearchTree<Player> bestScorers;
+        BinarySearchTree<Player> bestScorer;
+        for (auto team : teams)
+        {
+            if (team.getName() == TeamName){
+                for (auto player : team.getPlayers())
+                {
+                    if (player.getGoals() > 0) {
+                        bestScorer.insert(player);
+                    } 
+                }
+            }
+            
+        }
+        bestScorer.printTree();
+        
+        
+        auto end = chrono::high_resolution_clock::now();
+
+        auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+        cout << "BST display time: " << duration.count() << " microseconds" << endl;
+    }
+
     void Season::DisplayBestScorersAVL() {
         auto start = chrono::high_resolution_clock::now();
 
@@ -150,7 +177,7 @@ void Season::printGW(int round)
         teams.printTree();
     }
     void Season::choice(int n,int gw) {
-        string name;
+        string name,teamName;
         BinarySearchTree<Team> myteams;
 
 
@@ -159,33 +186,29 @@ void Season::printGW(int round)
             cout << n;
             case 1:
                 system("clear");
-                DisplayBestScorersBST();
+                DisplayBestScorersAVL();
                 break;
             case 2:
                 system("clear");
-                DisplayBestScorersAVL();
+                DisplayScorersBST(gw);
                 break;
             case 3:
                 system("clear");
-                DisplayScorersBST(gw);
-                break;
-            case 4:
-                system("clear");
                 DisplayScorersAVL(gw);
                 break;
-            case 5: 
+            case 4: 
                 cout << "Enter the name of the player: ";
                 getline(cin>>ws, name);
                 showCurve(name);
                 break;
-            case 6:
+            case 5:
                 
                 system("clear");
                 printGW(gw);
                 
 
                 break;
-            case 7:
+            case 6:
                 for (auto team : teams)
                 {
                     team.InfoAt(gw); // derafa 3shan el gameweek bta3 el standing table
@@ -194,6 +217,20 @@ void Season::printGW(int round)
                 }
                 system("clear");
                 printgametable(myteams);
+                break;
+            case 7:
+                cout << "Enter Team Name : ";
+                getline(cin>>ws, teamName);
+                cout << endl;
+                printDistance(teamName,gw);
+                break;
+            
+            case 8:
+                cout << "Enter Team name :";
+                getline(cin>>ws, teamName);
+                system("clear");
+                cout << teamName << endl;
+                DisplayBestScorersBST(teamName);
                 break;
 
             default:

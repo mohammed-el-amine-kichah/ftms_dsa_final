@@ -14,11 +14,16 @@
 #include "Team.cpp"
 
 
+
+//1-        g++ -std=c++17 main.cpp Player.cpp
+//2 -     ./a.out
+
 using namespace std;
 
 
 int main(){
     Season s;
+    
     int selection = 1;
     int gw = -1;
    
@@ -44,12 +49,14 @@ int main(){
             cout << "\n\n";
             cout << "  please choose one of the following options:" << endl;
             cout << "\n";
-            cout << " 2 display best scorers using BST " << endl;
-            cout << " 3 display best scorers using AVL " << endl;
-            cout << " 4 display best scorer in every team " << endl;
-            cout << " 5 draw the curve of a given player " << endl;
-            cout << " 6 display gameweek details " << endl;
-            cout << " 7 display the standing table  " << endl;
+            cout << " 1 display best scorers using BST " << endl;
+            cout << " 2 display best scorers using AVL " << endl;
+            cout << " 3 display best scorer in every team " << endl;
+            cout << " 4 draw the curve of a given player " << endl;
+            cout << " 5 display gameweek details " << endl;
+            cout << " 6 display the standing table  " << endl;
+            cout << " 7 display the distance runing of a given team  " << endl;
+            cout << " 8 display best scorer for a given team " << endl;
             cout << " 0 exit " << endl;
             cout << "\n\n";
             gw = 37;
@@ -74,12 +81,14 @@ int main(){
             cout << "\n\n";
             cout << "  please choose one of the following options:" << endl;
             cout << "\n";
-            cout << " 2 display best scorers using BST " << endl;
-            cout << " 3 display best scorers using AVL " << endl;
-            cout << " 4 display best scorer in every team " << endl;
-            cout << " 5 draw the curve of a given player " << endl;
-            cout << " 6 display gameweek details " << endl;
-            cout << " 7 display the standing table  " << endl;
+            cout << " 1 display best scorers using BST " << endl;
+            cout << " 2 display best scorers using AVL " << endl;
+            cout << " 3 display best scorer in every team " << endl;
+            cout << " 4 draw the curve of a given player " << endl;
+            cout << " 5 display gameweek details " << endl;
+            cout << " 6 display the standing table  " << endl;
+            cout << " 7 display the distance runing of a given team  " << endl;
+            cout << " 8 display best scorer for a given team " << endl;
             cout << " 0 exit " << endl;
             cout << "\n\n";
 
@@ -100,6 +109,10 @@ int main(){
     cout << "* Thanks for using the Football Touranment Management System! *\n";
     cout << "* ----------------------------------------------------------- *\n";
     cout << "\n";
+
+    
     return 0;
+
+    
 }
 

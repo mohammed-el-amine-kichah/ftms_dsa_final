@@ -29,7 +29,7 @@ public:
         games = readGamesFromFiles(this->teams,this->dates); 
         int counter = 0;
         for (int i = 0; i < 20; ++i) {
-        for (int j = 0; j < 22; j++)
+        for (int j = 0; j < 23; j++)
         {
             
             teams.at(i).addPlayer(players.at(counter));
@@ -69,6 +69,7 @@ public:
     void DisplayScorersBST(int round);
     void DisplayScorersAVL(int round);
     void DisplayBestScorersBST();
+    void DisplayBestScorersBST(string TeamName);
     void DisplayBestScorersAVL();
     void showCurve(string name);
 
