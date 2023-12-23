@@ -15,8 +15,6 @@
 #include <cstdlib> 
 
 
-//1-        g++ -std=c++17 main.cpp Player.cpp
-//         2022-12-10
 
 using namespace std;
 
@@ -71,9 +69,12 @@ int main(){
         }
         else if (selection == 2)
         {
-            Date d;
-            cout <<  endl << " Enter the date: yyyy-mm-dd " << endl;
-            cin >> d;
+            Date d, start(13,8,2022), end(29,04,2023);
+            cout <<  endl << " Enter the date: yyyy-mm-dd \n";
+            do{
+                cout<<"between (2022-08-13 and 2023-04-29)" << endl;
+                cin >> d;
+            }while(d>end && d<start);
             gw = d.DateToGameWeek(d, s.getDates());
             while (gw == -1)
             {

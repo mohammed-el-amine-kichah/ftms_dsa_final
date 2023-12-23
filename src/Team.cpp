@@ -68,49 +68,6 @@ void Team::logLoss()
     totalGamesPlayed++;
 }
 
-bool Team::compareTo( Team t )
-{
-    // Check if this -> team has more points.
-    if ( totalPoints > t.getTotalPoints() )
-    {
-        return true;
-    }
-    else if ( totalPoints < t.getTotalPoints() )
-    {
-        return false;
-    }
-    // If points are equal check if this -> team has higher goal difference.
-    else
-    {
-        if ( totalGoalDifference > t.getTotalGoalDifference())
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-}
-
-bool Team::compareTo(int round, Team t )
-{
-    // Check if this -> team has more points.
-    if ( points.at(round) > t.getPoints(round) )
-    {
-        return true;
-    }
-    else if ( points.at(round) < t.getPoints(round) )
-    {
-        return false;
-    }
-    // If points are equal check if this -> team has higher goal difference.
-    else
-    {
-        if ( goalDifference[round] > t.getGoalDifferenceI(round) ) return true;
-    }
-    return false;
-}
 
 void Team::toString()
 {

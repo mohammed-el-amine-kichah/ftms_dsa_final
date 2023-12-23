@@ -12,7 +12,6 @@ using namespace std;
 void Game::printGameInfo() const {
     cout  << homeTeam.getName()<< " " << homeTeamGoals << " - "<< awayTeamGoals<< " " << awayTeam.getName()
               << ", Date: " << match << ", Duration: " << duration << " minutes" << endl;
-    // Add more details as needed
 }
 void Game::printTableat(int round, vector<Team> &teams)
 {

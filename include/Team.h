@@ -108,47 +108,20 @@ public:
 
     bool operator<(const Team& team) const ;
 
-    /**
-        Mutator methods.
-    */
-
     void incrementPoints( int amount ) { totalPoints += amount; }
 
-    /**
-        Methods for incrementing overall goals for and against.
-        Used during the lifetime of a game.
-    */
     void goalScored( int amount );
     void goalAgainstScored( int amount );
 
 
-    /**
-        Methods for logging wins, draws and losses. Will also update
-        total points for this team based on results.
-    */
     void logWin();
     void logDraw();
     void logLoss();
 
-    /**
-        Method which compares this -> team to another team.
-
-        Returns true if this -> team has higher total points.
-        If this -> team has equal points returns true if this -> team
-        has a higher goal difference.
-
-        Used when sorted league table.
-    */
-    bool compareTo( int round, Team t );
-    bool compareTo(  Team t ) ;
-
-    /**
-        Prints team name and statistics.
-    */
+    
     void toString();
 
-    // methode to populate the team players from csv file
-    //void populateTeamPlayers(string teamName);
+
     void addPlayer(const Player& player);
     void printTeamPlayers();
     void InfoAt(int round=37);
