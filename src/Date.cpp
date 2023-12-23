@@ -307,12 +307,12 @@ ostream& operator<<(ostream &os, const Date &date) {
 }
 
 istream& operator>>(istream &is, Date &date) {
- char c;
- is >> date.day >> c >> date.month >> c >> date.year;
+    char c1, c2;
+    is >> date.year >> c1 >> date.month >> c2 >> date.day;
 
- date.validate();
+    date.validate();
 
- return is;
+    return is;
 }
 int Date::DateToGameWeek(const Date& date, const vector<Date>& dates) {
     for (int i = 0; i < dates.size(); i++) {
@@ -321,7 +321,7 @@ int Date::DateToGameWeek(const Date& date, const vector<Date>& dates) {
             {
                 return -1;
             }
-            return i;
+            return i-1;
         }
     }
     return -1;

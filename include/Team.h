@@ -4,6 +4,15 @@
 #include "Player.h"
 #include <string>
 #include <map>
+#include<vector>
+
+class Counter {
+public:
+    static int counter;
+    static void reset() { counter = 0; }
+};
+
+int Counter::counter = 0;
 
 class Team
 {
@@ -142,10 +151,12 @@ public:
     //void populateTeamPlayers(string teamName);
     void addPlayer(const Player& player);
     void printTeamPlayers();
-    void InfoAt(int );
+    void InfoAt(int round=37);
 };
+
 ostream& operator<<(ostream& out, const Team& team) {
-    out << setw(20) << left << team.getName() 
+    Counter::counter++;
+    out <<Counter::counter<< " - "<< setw(20) << left << team.getName() 
     << setw(16) << left << team.getCMP() 
     << setw(16) << left << team.getCwins() 
     << setw(16) << left << team.getCDraws() 

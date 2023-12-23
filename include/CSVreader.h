@@ -19,8 +19,9 @@ vector<Team> readTeamsFromCSV(const string& filename) {
     if (!inputFile.is_open()) {
         throw runtime_error("Could not open file");
     }
+    int counter = 0;
 
-    while (getline(inputFile, line)) {
+    while (getline(inputFile, line) && counter <20) {
         stringstream inputString(line);
         string name,coach,prisedent;
 
@@ -30,14 +31,12 @@ vector<Team> readTeamsFromCSV(const string& filename) {
         
         Team team(name,coach,prisedent);
         teams.push_back(team);
+        counter++;
     }
 
     inputFile.close();
     return teams;
 }
-
-
-
 vector<Player> readCSVFiles() {
     vector<Player> players;
 
@@ -370,7 +369,7 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                 int duration = stoi(token);
 
                 // Add the Game object to the vector
-                allGames.emplace_back(homeTeam, awayTeam, homeTeamGoals, awayTeamGoals, matchdate, duration);
+                allGames.emplace_back(homeTeam, awayTeam, homeTeamGoals, awayTeamGoals, matchdate, duration, fileNumber);
             } catch (const exception& e) {
                 cerr << "Error processing line " << lineCount << " in file " << fileName << ": " << e.what() << endl;
                 // Handle the error (e.g., log, notify user, etc.)

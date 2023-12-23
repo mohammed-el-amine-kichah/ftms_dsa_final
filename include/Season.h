@@ -10,6 +10,8 @@
 #include "CSVreader.h"
 #include "BinarySearchTree.h"
 #include "AvlTree.h"
+#include<vector>
+#include<cstdlib>
 
 using namespace std;
 
@@ -43,6 +45,7 @@ public:
     vector<Team> getTeams() { return teams; }
     vector<Game> getGames() { return games; }
     vector<Player> getPlayers() { return players; }
+    vector<Player> getTeamPlayers(string teamName);
     void printTeams(){
         for (auto team : teams)
         {
@@ -64,7 +67,7 @@ public:
 
     ~Season(){};
 
-    void printGW(int round );
+    void printGW(int round);
     void printgametable(BinarySearchTree<Team> &teams);
     void DisplayScorersBST(int round);
     void DisplayScorersAVL(int round);
@@ -76,7 +79,9 @@ public:
     void choice(int n, int gw);
     void printDistance(string ,int );
     vector<Date> getDates() {return dates;}
-
+    void teamInformation(string ,int );
+    void printGameWeekDetails(int gw);
+    void printPlayersDetails(int gw);
 };
 
 

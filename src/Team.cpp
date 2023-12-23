@@ -148,7 +148,7 @@ bool Team::operator<(const Team& team) const {
    }
     return name < team.name;
 }
-void Team::InfoAt(int round=38)  // derafa khalil
+void Team::InfoAt(int round)  // derafa khalil
 {
     Cpoints = points[round];
     CgoalDifference = goalDifference[round];
