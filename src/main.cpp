@@ -19,7 +19,7 @@
 using namespace std;
 
 
-int main(){
+int main() {
     Season s;
 
     int selection = 1;
@@ -67,8 +67,8 @@ int main(){
                 s.choice(n,gw);
                 }
         }
-<<<<<<< HEAD
-        int n = 1; 
+
+            int n = 1; 
             while ( n != 0){
             cout << "\n\n";
             cout << "  please choose one of the following options:" << endl;
@@ -85,7 +85,8 @@ int main(){
             cout << "Enter your choice: ";
             cin >> n;
             s.choice(n,gw); 
-=======
+
+            }
         else if (selection == 2)
         {
             Date d, start(13,8,2022), end(29,04,2023);
@@ -100,7 +101,7 @@ int main(){
                 cout << " Enter a valid date: yyyy-mm-dd " << endl;
                 cin >> d;
                 gw = d.DateToGameWeek(d, s.getDates());
->>>>>>> 3ad1d6e1524e8e738e53b6a3496836419fcd1edf
+
             }
             int n = 1; 
                 while ( n != 0)
@@ -130,7 +131,7 @@ int main(){
     
     
 
-    system("cls");
+    system("clear");
     cout << "\n";
     cout << "* ----------------------------------------------------------- *\n";
     cout << "* Thanks for using the Football Touranment Management System! *\n";
