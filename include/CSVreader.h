@@ -19,22 +19,24 @@ vector<Team> readTeamsFromCSV(const string& filename) {
     if (!inputFile.is_open()) {
         throw runtime_error("Could not open file");
     }
+    int counter = 0;
 
-    while (getline(inputFile, line)) {
+    while (getline(inputFile, line) && counter <20) {
         stringstream inputString(line);
-        string name;
+        string name,coach,prisedent;
 
         getline(inputString, name, ',');
+        getline(inputString, coach, ',');
+        getline(inputString, prisedent, ',');
         
-        Team team(name);
+        Team team(name,coach,prisedent);
         teams.push_back(team);
+        counter++;
     }
 
     inputFile.close();
     return teams;
 }
-
-
 vector<Player> readCSVFiles() {
     vector<Player> players;
 
@@ -79,6 +81,7 @@ vector<Player> readCSVFiles() {
                 int start = stoi(startStr);
                 int end = stoi(endStr);
                 int played = stoi(playedStr);
+
                 bool playerExists = false;
                 for (auto& player : players) {
                     if (player.getTeam() == teamName && player.getName() == playerName) {
@@ -117,7 +120,9 @@ vector<Player> readCSVFiles() {
 
                     players.push_back(newPlayer);
                 }
-            } else {
+            } 
+            
+            else {
                 cerr << "Error reading line in file" << to_string(i) << ".csv" << endl;
             }
         }
@@ -364,7 +369,7 @@ vector<Game> readGamesFromFiles(vector<Team> &teams,vector<Date> &dates) {
                 int duration = stoi(token);
 
                 // Add the Game object to the vector
-                allGames.emplace_back(homeTeam, awayTeam, homeTeamGoals, awayTeamGoals, matchdate, duration);
+                allGames.emplace_back(homeTeam, awayTeam, homeTeamGoals, awayTeamGoals, matchdate, duration, fileNumber);
             } catch (const exception& e) {
                 cerr << "Error processing line " << lineCount << " in file " << fileName << ": " << e.what() << endl;
                 // Handle the error (e.g., log, notify user, etc.)

@@ -5,14 +5,13 @@
 #include <string>
 #include "../include/Game.h"
 #include "../include/Team.h"
+#include "../include/BinarySearchTree.h"
 
 using namespace std;
 
 void Game::printGameInfo() const {
-    cout << "Home Team: " << homeTeam.getName() << ", Away Team: " << awayTeam.getName()
-              << ", Home Goals: " << homeTeamGoals << ", Away Goals: " << awayTeamGoals
+    cout  << homeTeam.getName()<< " " << homeTeamGoals << " - "<< awayTeamGoals<< " " << awayTeam.getName()
               << ", Date: " << match << ", Duration: " << duration << " minutes" << endl;
-    // Add more details as needed
 }
 void Game::printTableat(int round, vector<Team> &teams)
 {

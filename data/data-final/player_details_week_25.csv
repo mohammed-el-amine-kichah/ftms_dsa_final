@@ -13,7 +13,7 @@ Arsenal,Mohamed Elneny,11,MF,0,1,1,0,8,0,97,97
 Arsenal,Willian,12,MF,0,0,1,0,9,0,0,0
 Arsenal,Alex Rúnarsson,13,GK,0,0,0,0,10,0,0,0
 Arsenal,Pablo Marí,14,DF,0,0,0,0,6,0,0,0
-Arsenal,Eddie Nketiah,15,FW,0,0,1,0,9,0,0,0
+Arsenal,Eddie Marla,15,FW,0,0,1,0,9,0,0,0
 Arsenal,Rob Holding,16,DF,0,0,1,0,3,0,0,0
 Arsenal,Cédric Soares,17,DF,0,0,0,1,5,0,0,0
 Arsenal,Dani Ceballos,18,MF,0,0,0,0,5,0,0,0
@@ -35,27 +35,27 @@ Norwich City,Josh Sargent,10,FW,1,1,1,0,1,0,97,97
 Norwich City,Onel Hernández,11,MF,0,1,1,0,3,0,97,97
 Norwich City,Michael McGovern,12,GK,0,0,0,0,8,0,0,0
 Norwich City,Christoph Zimmermann,13,DF,0,0,0,0,5,0,0,0
-Norwich City,Andrew Omobamidele,14,DF,0,0,1,0,8,0,0,0
+Norwich City,Mark Omo,14,DF,0,0,1,0,8,0,0,0
 Norwich City,Oliver Skipp,15,MF,0,0,1,0,3,0,0,0
 Norwich City,Mathias Normann,16,MF,0,0,0,0,10,0,0,0
 Norwich City,Todd Cantwell,17,MF,0,0,0,0,5,0,0,0
 Norwich City,Marco Stiepermann,18,MF,0,0,0,0,2,0,0,0
 Norwich City,Brandon Williams,19,DF,0,0,0,0,9,0,0,0
-Norwich City,Grant Hanley,20,DF,0,0,1,0,10,0,0,0
-Norwich City,Josh Sargent,21,FW,0,0,0,0,10,0,0,0
+Norwich City,Beti Hana,20,DF,0,0,1,0,10,0,0,0
+Norwich City,Moadch Asar,20,DF,0,0,0,0,10,0,0,0
 Norwich City,Michael sinn,22,GK,0,0,1,0,6,0,0,0
 Norwich City,Josh Martin,23,MF,0,0,1,0,6,0,0,0
 Southampton,Alex McCarthy,1,GK,0,1,0,0,2,0,94,94
 Southampton,Kyle Walker-Peters,2,DF,0,1,1,0,0,0,94,94
 Southampton,Jack Stephens,3,DF,0,1,1,0,5,0,94,94
 Southampton,Jannik Vestergaard,4,DF,0,1,1,0,8,0,94,94
-Southampton,Ryan Bertrand,5,DF,0,1,1,0,0,0,94,94
+Southampton,Ryan Ber,5,DF,0,1,1,0,0,0,94,94
 Southampton,Oriol Romeu,6,MF,0,1,1,0,7,0,94,94
 Southampton,Stuart Armstrong,7,MF,0,1,0,0,7,0,94,94
 Southampton,James Ward-Prowse,8,MF,0,1,0,0,7,0,94,94
 Southampton,Ché Adams,9,FW,2,1,0,0,8,0,94,94
 Southampton,Nathan Redmond,10,MF,0,1,0,1,4,0,94,94
-Southampton,Danny Ings,11,FW,2,1,1,0,7,0,94,94
+Southampton,Danniello mara,11,FW,2,1,1,0,7,0,94,94
 Southampton,Fraser Forster,12,GK,0,0,1,0,7,0,0,0
 Southampton,Mohammed Salisu,13,DF,0,0,0,0,3,0,0,0
 Southampton,Theo Walcott,14,MF,0,0,1,0,6,0,0,0
@@ -89,7 +89,7 @@ Newcastle United,Matt Ritchie,18,MF,0,0,0,0,0,0,0,0
 Newcastle United,Joe Willock,19,MF,0,0,1,0,9,0,0,0
 Newcastle United,Javier Manquillo,20,DF,0,0,1,0,6,0,0,0
 Newcastle United,vini Wilson,21,FW,0,0,0,0,4,0,0,0
-Newcastle United,Paul guergour,22,DF,0,0,0,0,5,0,0,0
+Newcastle United,Paul Guer,22,DF,0,0,0,0,5,0,0,0
 Newcastle United,Joe blace,23,MF,0,0,0,0,10,0,0,0
 Tottenham,Hugo Lloris,1,GK,0,1,1,0,4,0,94,94
 Tottenham,Matt Doherty,2,DF,0,1,0,0,4,0,94,94
@@ -106,7 +106,7 @@ Tottenham,Joe Hart,12,GK,0,0,0,0,8,0,0,0
 Tottenham,Joe Rodon,13,DF,0,0,0,0,9,0,0,0
 Tottenham,Cristian Romero,14,DF,0,0,0,0,0,0,0,0
 Tottenham,Eric Dier,15,DF,0,0,1,0,9,0,0,0
-Tottenham,Oliver Skipp,16,MF,0,0,0,0,10,0,0,0
+Tottenham,Oliga Lemp,16,MF,0,0,0,0,10,0,0,0
 Tottenham,Moussa Sissoko,17,MF,0,0,1,0,9,0,0,0
 Tottenham,Giovani Lo Celso,18,MF,0,0,0,0,3,0,0,0
 Tottenham,Steven Bergwijn,19,MF,0,0,0,0,9,0,0,0
@@ -173,7 +173,7 @@ Manchester City,Kevin De Bruyne,10,MF,0,1,1,0,7,0,95,95
 Manchester City,Riyad Mahrez,11,MF,0,1,0,1,1,0,95,95
 Manchester City,Zack Steffen,12,GK,0,0,1,0,8,0,0,0
 Manchester City,João Cancelo,13,DF,0,0,1,0,3,0,0,0
-Manchester City,Aymeric Laporte,14,DF,0,0,1,0,4,0,0,0
+Manchester City,Lora kimina,14,MD,0,0,1,0,4,0,0,0
 Manchester City,Jack simonz,15,MF,0,0,1,1,3,0,0,0
 Manchester City,Rodri,16,MF,0,0,1,0,3,0,0,0
 Manchester City,Ferran Torres,17,FW,0,0,1,0,3,0,0,0
@@ -201,7 +201,7 @@ West Ham,Craig Dawson,15,DF,0,0,0,0,8,0,0,0
 West Ham,Declan Rice,16,MF,0,0,1,0,8,0,0,0
 West Ham,Pablo Fornals,17,MF,0,0,0,1,4,0,0,0
 West Ham,Jarrod Bowen,18,MF,0,0,0,0,6,0,0,0
-West Ham,Andriy Yarmolenko,19,MF,0,0,0,0,3,0,0,0
+West Ham,Bernardo Lemota,19,FW,0,0,0,0,3,0,0,0
 West Ham,Arthur Masuaku,20,DF,0,0,1,0,9,0,0,0
 West Ham,Conor Coventry,21,MF,0,0,1,0,6,0,0,0
 West Ham,Ademipo Odubeko,22,FW,0,0,0,0,4,0,0,0
@@ -235,7 +235,7 @@ Wolves,Romain Saïss,3,DF,0,1,1,0,0,0,92,92
 Wolves,Conor Coady,4,DF,0,1,1,0,2,0,92,92
 Wolves,Fernando Marçal,5,DF,0,1,0,0,0,0,92,92
 Wolves,Nélson Semedo,6,DF,0,1,0,0,5,0,92,92
-Wolves,Rúben Neves,7,MF,0,1,1,0,7,0,92,92
+Wolves,Rúbenio Nene,7,MF,0,1,1,0,7,0,92,92
 Wolves,Rúben Neves,8,MF,0,1,0,0,2,0,92,92
 Wolves,Adama Traoré,9,MF,0,1,0,0,1,0,92,92
 Wolves,Raúl Jiménez,10,FW,0,1,1,0,4,0,92,92
@@ -244,8 +244,8 @@ Wolves,John Ruddy,12,GK,0,0,0,0,6,0,0,0
 Wolves,Leander Dendoncker,13,MF,0,0,0,0,8,0,0,0
 Wolves,João Moutinho,14,MF,0,0,1,0,7,0,0,0
 Wolves,Willian José,15,FW,0,0,0,0,9,0,0,0
-Wolves,João Moutinho,16,MF,0,0,0,0,5,0,0,0
-Wolves,Adama Traoré,17,MF,0,0,0,0,5,0,0,0
+Wolves,Molonia Nebew,16,DF,0,0,0,0,5,0,0,0
+Wolves,Joe Malkoci,17,MF,0,0,0,0,5,0,0,0
 Wolves,Marçal,18,DF,0,0,0,0,4,0,0,0
 Wolves,Patrick Cutrone,19,FW,0,0,0,0,1,0,0,0
 Wolves,Meritan Shabani,20,MF,0,0,0,0,3,0,0,0
@@ -303,12 +303,12 @@ Leeds United,Liam Cooper,2,DF,0,1,1,0,5,0,93,93
 Leeds United,Diego Llorente,3,DF,0,1,1,1,6,0,93,93
 Leeds United,Robin Koch,4,DF,0,1,1,0,7,0,93,93
 Leeds United,Pascal Struijk,5,DF,0,1,1,0,10,0,93,93
-Leeds United,Liam Cooper,6,DF,0,1,0,0,6,0,93,93
+Leeds United,Filipi jr,6,MD,0,1,0,0,6,0,93,93
 Leeds United,Ian Poveda,7,MF,0,1,1,0,4,0,93,93
 Leeds United,Jack Harrison,8,MF,0,1,1,0,2,0,93,93
 Leeds United,Patrick Bamford,9,FW,1,1,0,0,4,0,93,93
 Leeds United,Ezgjan Alioski,10,DF,0,1,1,0,10,0,93,93
-Leeds United,Tyler Roberts,11,FW,0,1,1,0,2,0,93,93
+Leeds United,Kalvin Robert,11,FW,0,1,1,0,2,0,93,93
 Leeds United,Kiko Casilla,12,GK,0,0,1,0,4,0,0,0
 Leeds United,Stuart Dallas,13,MF,0,0,0,0,6,0,0,0
 Leeds United,Raphinha,14,MF,0,0,0,0,0,0,0,0
@@ -360,16 +360,16 @@ Everton,Asmir Begović,13,GK,0,0,1,0,4,0,0,0
 Everton,Abdoulaye Doucouré,14,MF,0,0,0,0,4,0,0,0
 Everton,Moise Kean,15,FW,0,0,1,0,6,0,0,0
 Everton,Andros Townsend,16,MF,0,0,1,0,1,0,0,0
-Everton,Alexander-Arnold,17,DF,0,0,0,0,3,0,0,0
+Everton,Alex Arno,17,DF,0,0,0,0,3,0,0,0
 Everton,Anthony Gordon,18,MF,0,0,1,1,9,0,0,0
 Everton,Jonjoe Kenny,19,DF,0,0,1,0,5,0,0,0
 Everton,Denis Adeniran,20,MF,0,0,0,0,7,0,0,0
-Everton,André Gomes,21,MF,0,0,1,0,10,0,0,0
+Everton,Anora Gomes,21,MF,0,0,1,0,10,0,0,0
 Everton,Andy Lonergan,22,GK,0,0,1,1,4,0,0,0
 Everton,Harry Tyrer,23,GK,0,0,0,0,10,0,0,0
 Brighton,Robert Sanchez,1,GK,0,1,1,0,4,0,93,93
 Brighton,Tariq Lamptey,2,DF,0,1,0,0,4,0,93,93
-Brighton,Ben White,3,DF,0,1,0,0,2,0,93,93
+Brighton,Ben Whitea,3,DF,0,1,0,0,2,0,93,93
 Brighton,Adam Webster,4,DF,0,1,0,0,8,0,93,93
 Brighton,Lewis Dunk,5,DF,0,1,1,0,7,0,93,93
 Brighton,Dale Stephens,6,MF,1,1,1,0,2,0,93,93
@@ -403,7 +403,7 @@ Crystal Palace,Wilfried Zaha,10,MF,0,1,1,0,5,0,93,93
 Crystal Palace,Jeffrey Schlupp,11,MF,0,1,1,0,8,0,93,93
 Crystal Palace,Jack Butland,12,GK,0,0,1,0,8,0,0,0
 Crystal Palace,Connor Wickham,13,FW,0,0,0,0,5,0,0,0
-Crystal Palace,Andros Townsend,14,MF,0,0,1,0,9,0,0,0
+Crystal Palace,Andrio Romarinho,14,MF,0,0,1,0,9,0,0,0
 Crystal Palace,Luka Milivojević,15,MF,0,0,1,0,7,0,0,0
 Crystal Palace,James McArthur,16,MF,0,0,0,0,1,0,0,0
 Crystal Palace,Jordan Ayew,17,FW,0,0,1,0,8,0,0,0
@@ -412,7 +412,7 @@ Crystal Palace,Martin Kelly,19,DF,0,0,0,0,2,0,0,0
 Crystal Palace,Joel Ward,20,DF,0,0,0,0,9,0,0,0
 Crystal Palace,Wayne Hennessey,21,GK,0,0,1,0,0,0,0,0
 Crystal Palace,Odsonne Édouard,22,FW,0,0,1,0,7,0,0,0
-Crystal Palace,Will Hughes,23,MF,0,0,1,0,9,0,0,0
+Crystal Palace,Wiliam Hug,23,MF,0,0,1,0,9,0,0,0
 Burnley,Nick Pope,1,GK,0,1,0,0,10,0,92,92
 Burnley,Matthew Lowton,2,DF,0,1,1,0,3,0,92,92
 Burnley,Charlie Taylor,3,DF,0,1,0,1,7,0,92,92
@@ -428,13 +428,13 @@ Burnley,Robbie Brady,12,MF,0,0,1,0,6,0,0,0
 Burnley,Will Norris,13,GK,0,0,0,0,2,0,0,0
 Burnley,Maxwel Cornet,14,DF,0,0,1,0,8,0,0,0
 Burnley,Phil Bardsley,15,DF,0,0,0,0,7,0,0,0
-Burnley,James Tarkowski,16,DF,0,0,1,0,3,0,0,0
+Burnley,Lark Kowski,16,DF,0,0,1,0,3,0,0,0
 Burnley,Connor Roberts,17,DF,0,0,1,0,6,0,0,0
 Burnley,Josh Brownhill,18,MF,0,0,1,0,7,0,0,0
 Burnley,Matěj Vydra,19,FW,0,0,1,0,0,0,0,0
 Burnley,Erik Pieters,20,DF,0,0,0,0,10,0,0,0
 Burnley,Joel Mumbongo,21,FW,0,0,0,0,7,0,0,0
-Burnley,Wayne Hennessey,22,GK,0,0,0,1,2,0,0,0
+Burnley,Wlson Henn,22,MD,0,0,0,1,2,0,0,0
 Burnley,Max Thompson,23,FW,0,0,0,0,2,0,0,0
 Chelsea,Kepa Arrizabalaga,1,GK,0,1,0,1,10,0,92,92
 Chelsea,Antonio Rüdiger,2,DF,0,1,1,0,7,0,92,92
@@ -457,5 +457,5 @@ Chelsea,Marco van Ginkel,18,MF,0,0,0,1,9,0,0,0
 Chelsea,Mason Mount,19,MF,0,0,0,0,3,0,0,0
 Chelsea,Callum Hudson-Odoi,20,MF,0,0,0,0,5,0,0,0
 Chelsea,Reece James,21,DF,0,0,1,0,5,0,0,0
-Chelsea,Christian Pulisic,22,FW,0,0,0,0,1,0,0,0
+Chelsea,Chris Leenalov,27,FW,0,0,0,0,1,0,0,0
 Chelsea,Emerson Palmieri,23,DF,0,0,0,0,4,0,0,0

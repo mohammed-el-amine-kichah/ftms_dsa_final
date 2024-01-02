@@ -3,6 +3,7 @@
 #include<iostream>
 #pragma once
 #include <iomanip>
+#include<vector>
 
 using namespace std;
 
@@ -22,9 +23,11 @@ public:
     int getNumYellowCards() const { return numYellowCards; }
     double getdistance() const { return distance; }
     string getTeam() const { return team; }
+
     void setGoals(int goalss) { this->goals = goalss; }
     void setTimePlayed(int timePlayedd) { this->timePlayed = timePlayedd; } 
     bool operator<(const Player& second) const;
+    
     void addGoals(int g){goals += g;}
     void addRedCards(int red){numRedCards += red;}
     void addYellowCards(int yellow){numYellowCards += yellow;}

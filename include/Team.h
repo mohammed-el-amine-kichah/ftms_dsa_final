@@ -4,18 +4,29 @@
 #include "Player.h"
 #include <string>
 #include <map>
+#include<vector>
+
+class Counter {
+public:
+    static int counter;
+    static void reset() { counter = 0; }
+};
+
+int Counter::counter = 0;
 
 class Team
 {
 private:
 
     string name;              // Team name.
+    string coachName;         // Team coach.
+    string PresidentName;     // Team president.
     vector<Player> players;   // Team players.
     
     int totalGoalsFor;        // Total goals scored during season.
     int totalGoalsAgainst;    // Total goals scored against during season.
     int totalPoints;          // Total points for current season.
-    int totalGoalDifference;       // Goals for - goals against
+    int totalGoalDifference;  // Goals for - goals against
     int totalWins;            // Total games won.
     int totalDraws;           // Total games drawn.
     int totalLosses;          // Total games lost.
@@ -45,14 +56,17 @@ private:
 public:
     friend std::ostream& operator<<(std::ostream& out, const Team& team);
     ~Team() {}
-    Team( string name1);
+    Team( string name1, string coachName1="", string PresidentName1="");
 
     string getName() const { return name; }
+    string getCoachName() const { return coachName; }
+    string getPresidentName() const { return PresidentName; }
     vector<Player> getPlayers() { return players; }
     int getTotalGoalsfor() { return totalGoalsFor; }
     int getTotalGoalsAgainst() { return totalGoalsAgainst; }
     int getTotalPoints() { return totalPoints; }
     int getTotalGoalDifference() { return totalGoalDifference; }
+
 
     int getGoalDifferenceI(int i) { return goalDifference[i]; }
     int getWinsI(int i) { return Wins[i]; };
@@ -94,53 +108,28 @@ public:
 
     bool operator<(const Team& team) const ;
 
-    /**
-        Mutator methods.
-    */
-
     void incrementPoints( int amount ) { totalPoints += amount; }
 
-    /**
-        Methods for incrementing overall goals for and against.
-        Used during the lifetime of a game.
-    */
     void goalScored( int amount );
     void goalAgainstScored( int amount );
 
 
-    /**
-        Methods for logging wins, draws and losses. Will also update
-        total points for this team based on results.
-    */
     void logWin();
     void logDraw();
     void logLoss();
 
-    /**
-        Method which compares this -> team to another team.
-
-        Returns true if this -> team has higher total points.
-        If this -> team has equal points returns true if this -> team
-        has a higher goal difference.
-
-        Used when sorted league table.
-    */
-    bool compareTo( int round, Team t );
-    bool compareTo(  Team t ) ;
-
-    /**
-        Prints team name and statistics.
-    */
+    
     void toString();
 
-    // methode to populate the team players from csv file
-    //void populateTeamPlayers(string teamName);
+
     void addPlayer(const Player& player);
     void printTeamPlayers();
-    void InfoAt(int );
+    void InfoAt(int round=37);
 };
+
 ostream& operator<<(ostream& out, const Team& team) {
-    out << setw(20) << left << team.getName() 
+    Counter::counter++;
+    out <<Counter::counter<< " - "<< setw(20) << left << team.getName() 
     << setw(16) << left << team.getCMP() 
     << setw(16) << left << team.getCwins() 
     << setw(16) << left << team.getCDraws() 
