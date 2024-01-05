@@ -6,11 +6,8 @@ with open('/Users/mymacbookair/Desktop/ftms_dsa_final/draw/goalDistribution.csv'
 
 distribution = pd.read_csv('/Users/mymacbookair/Desktop/ftms_dsa_final/draw/goalDistribution.csv',skiprows=1)
 
-
-
 x = distribution['GameweekNumber']
 y = distribution['Goals']
-
 
 plt.plot(x,y,label='Goals Distribution')
 plt.xlabel('Gameweek')
